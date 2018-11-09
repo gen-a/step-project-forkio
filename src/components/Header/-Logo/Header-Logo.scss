@@ -1,0 +1,38 @@
+.Header-Logo {
+
+  display: block;
+  flex-basis: 149px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 41px;
+  order: 1;
+  overflow: hidden;
+
+  @include respond-to-screen(xs) {
+    flex-basis: 43px;
+    margin-left: 15px;
+    width: 43px;
+
+  }
+  @include respond-to-screen(sm) {
+    margin-left: 24px;
+  }
+  @include respond-to-screen(md, lg) {
+    margin-left: 20px;
+  }
+}
+
+.Header-LogoImage {
+
+  background: url(../img/logo.svg);
+  background-size: cover;
+  display: block;
+  height: 41px;
+  transition: all 0.2s;
+  width: 149px;
+
+  &:hover {
+    background: url(../img/logo_white.svg);
+    background-size: cover;
+  }
+}

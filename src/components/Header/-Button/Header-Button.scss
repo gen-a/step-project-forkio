@@ -1,0 +1,33 @@
+.Header-Button {
+
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  order: 2;
+
+  @include respond-to-screen(xs) {
+    border-radius: 19px;
+    height: 38px;
+    font-size: 0.9em;
+    line-height: 1em;
+    padding: 0 24px;
+  }
+
+  @include respond-to-screen(sm) {
+    border-radius: 21px;
+    height: 42px;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0 26px;
+  }
+
+  @include respond-to-screen(md) {
+    margin-right: 20px;
+  }
+
+  @include respond-to-screen(lg) {
+    order: 3;
+    margin-right: 20px;
+
+  }
+}

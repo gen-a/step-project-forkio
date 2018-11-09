@@ -1,0 +1,28 @@
+$color-menu-switch-icon: #8d81ac !default;
+$color-menu-switch-icon-hover: #ffffff !default;
+
+.MenuSwitch{
+
+  cursor: pointer;
+  height: 31px;
+  width: 31px;
+
+  path{
+    fill:$color-menu-switch-icon;
+    transition: fill 0.2s;
+  }
+
+  &:hover path {
+    fill: $color-menu-switch-icon-hover
+  }
+  &-Icon_close{
+    display: none;
+  }
+  &_isOpen &-Icon {
+    display: none;
+  }
+  &_isOpen &-Icon_close {
+    display: block;
+  }
+
+}

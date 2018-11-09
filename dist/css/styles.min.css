@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:600i");.Button{background-color:#8d81ac;-webkit-border-radius:20px;border-radius:20px;border:1px solid #8d81ac;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;cursor:pointer;font-family:"Montserrat",sans-serif;font-size:16px;font-weight:700;height:40px;outline:0;padding:0 35px;-webkit-transition:.2s color;-o-transition:.2s color;transition:.2s color;white-space:nowrap}
+.Button:hover{background-color:white;color:#8d81ac}.Section_background_lightest{background-color:white}
+.Section_background_light{background-color:#f4f4f4}.Section_background_medium{background-color:#777}
+.Section_background_dark{background-color:#27262a}.Section_background_darkest{background-color:#000}
+.Section_position_sticky{position:-webkit-sticky;position:sticky;top:0;z-index:1}
+.Page-ContentContainer{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;max-width:1200px;min-width:320px;padding:0 10px;position:relative}
+.MenuSwitch{cursor:pointer;height:31px;width:31px}.MenuSwitch path{fill:#8d81ac;-webkit-transition:fill .2s;-o-transition:fill .2s;transition:fill .2s}
+.MenuSwitch:hover path{fill:#fff}.MenuSwitch-Icon_close{display:none}.MenuSwitch_isOpen .MenuSwitch-Icon{display:none}
+.MenuSwitch_isOpen .MenuSwitch-Icon_close{display:block}.Header-Logo{display:block;-webkit-flex-basis:149px;-ms-flex-preferred-size:149px;flex-basis:149px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;height:41px;-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;overflow:hidden}
+@media only screen and (max-width:400px){.Header-Logo{-webkit-flex-basis:43px;-ms-flex-preferred-size:43px;flex-basis:43px;margin-left:15px;width:43px}
+}@media only screen and (min-width:401px) and (max-width:480px){.Header-Logo{margin-left:24px}
+}@media only screen and (min-width:481px){.Header-Logo{margin-left:20px}}.Header-LogoImage{background:url(../img/logo.svg);-webkit-background-size:cover;background-size:cover;display:block;height:41px;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s;width:149px}
+.Header-LogoImage:hover{background:url(../img/logo_white.svg);-webkit-background-size:cover;background-size:cover}
+.Header-Button{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2}
+@media only screen and (max-width:400px){.Header-Button{-webkit-border-radius:19px;border-radius:19px;height:38px;font-size:.9em;line-height:1em;padding:0 24px}
+}@media only screen and (min-width:401px) and (max-width:480px){.Header-Button{-webkit-border-radius:21px;border-radius:21px;height:42px;font-size:1em;line-height:1em;padding:0 26px}
+}@media only screen and (min-width:481px) and (max-width:992px){.Header-Button{margin-right:20px}
+}@media only screen and (min-width:993px){.Header-Button{-webkit-box-ordinal-group:4;-webkit-order:3;-ms-flex-order:3;order:3;margin-right:20px}
+}.Header-Navigation{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}
+@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:2}
+}@media only screen and (max-width:480px){.Header-Navigation_isActive{opacity:1}}
+@media only screen and (min-width:481px) and (max-width:992px){.Header-Navigation{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding:11px 0;-webkit-box-ordinal-group:4;-webkit-order:3;-ms-flex-order:3;order:3;text-align:center}
+}@media only screen and (min-width:993px){.Header-Navigation{-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;text-align:right}
+}.Header-NavigationEntry{color:#8d81ac;font-size:1em;line-height:2em;position:relative;text-decoration:none;-webkit-transition:color .2s;-o-transition:color .2s;transition:color .2s}
+.Header-NavigationEntry:hover{color:white}@media only screen and (max-width:480px){.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
+}@media only screen and (min-width:481px) and (max-width:992px){.Header-NavigationEntry{font-weight:700;padding:0 23px}
+}@media only screen and (min-width:993px){.Header-NavigationEntry{font-weight:700;padding:0 20px}
+}@media only screen and (max-width:480px){.Header-NavigationEntry_isCurrent{color:#8d81ac}
+}@media only screen and (max-width:480px){.Header-NavigationEntry_isCurrent:after{background:#8d81ac;content:'';height:54px;left:0;position:absolute;top:22px;width:4px}
+}.Header-MenuSwitch{-webkit-flex-basis:31px;-ms-flex-preferred-size:31px;flex-basis:31px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2}
+@media only screen and (max-width:400px){.Header-MenuSwitch{margin-right:13px}}@media only screen and (min-width:401px) and (max-width:480px){.Header-MenuSwitch{margin-right:24px}
+}@media only screen and (min-width:481px){.Header-MenuSwitch{display:none}}.Header{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0;position:relative}
+@media only screen and (max-width:480px){.Header{height:105px;padding-top:32px}}@media only screen and (min-width:481px) and (max-width:992px){.Header{min-height:120px;padding-top:22px;position:-webkit-sticky;position:sticky}
+}@media only screen and (min-width:993px){.Header{min-height:100px;padding-top:30px;position:-webkit-sticky;position:sticky;z-index:1}
+}.Header-ContentContainer{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;max-width:1240px;margin:0 auto;width:100%}
+.Title{background:#000 url(../img/title-background.jpg) 50% 0 no-repeat;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:"Montserrat",sans-serif;position:relative;text-align:center}
+@media only screen and (max-width:400px){.Title{background-position:50% -85px;height:614px}
+}@media only screen and (min-width:401px) and (max-width:480px){.Title{background-position:50% 0;height:730px}
+}@media only screen and (min-width:481px) and (max-width:992px){.Title{background-position:50% -63px;height:682px}
+}@media only screen and (min-width:993px){.Title{background-position:50% -45px;height:700px}
+}.Title-Text{-webkit-box-sizing:border-box;box-sizing:border-box}@media only screen and (max-width:400px){.Title-Text{height:236px;padding:24px 0 0 0}
+}@media only screen and (min-width:401px) and (max-width:480px){.Title-Text{height:330px;padding:80px 20px 0 20px}
+}@media only screen and (min-width:481px) and (max-width:992px){.Title-Text{height:261px;padding:23px 20px 0 20px}
+}@media only screen and (min-width:993px){.Title-Text{height:279px;padding:32px 20px 0 20px}
+}.Title-Name{color:#fff;font-weight:700;padding:0;margin:0}@media only screen and (max-width:400px){.Title-Name{font-size:3em;line-height:1.25em;padding:.125em 0}
+}@media only screen and (min-width:401px) and (max-width:480px){.Title-Name{font-size:3.5em;letter-spacing:-0.5px;line-height:1.25em;margin-bottom:13px;padding:.125em 0}
+}@media only screen and (min-width:481px) and (max-width:992px){.Title-Name{font-size:4.5em;letter-spacing:-0.5px;line-height:1.25em;padding:.125em 0}
+}@media only screen and (min-width:993px){.Title-Name{font-size:5em;letter-spacing:1px;line-height:1.25em;padding:.125em 0}
+}.Title-Slogan{color:#8d81ac;font-family:"Lato",sans-serif;margin:0;padding:0}
+@media only screen and (max-width:400px){.Title-Slogan{font-size:1.19em;line-height:1.825em;padding:.025em 0;text-transform:capitalize}
+}@media only screen and (min-width:401px) and (max-width:480px){.Title-Slogan{font-family:"Montserrat",sans-serif;font-size:1.275em;line-height:1.75em;margin-bottom:12px;padding:.025em 0;text-transform:capitalize}
+}@media only screen and (min-width:481px) and (max-width:992px){.Title-Slogan{font-size:1.5em;line-height:1.375em;padding-bottom:12px}
+}@media only screen and (min-width:993px){.Title-Slogan{font-size:1.875em;line-height:1.375em;margin:-8px 0 11px 0;padding:.025em 0}
+}.Title-Notice{color:#848e97;margin:0;text-transform:uppercase}@media only screen and (max-width:400px){.Title-Notice{font-size:.875em;line-height:1.375em;padding:.5em 0}
+}@media only screen and (max-width:400px){.Download{margin:-24px 0 24px 0}}@media only screen and (min-width:401px){.Download{margin:-32px 0 24px 0}
+}.Download-Button{display:block;margin:0 auto;-webkit-border-radius:30px;border-radius:30px;bottom:0;font-size:1.25em;height:60px;letter-spacing:.5px;line-height:1em;padding:0 60px}
+@media only screen and (max-width:400px){.Download-Button{-webkit-border-radius:23px;border-radius:23px;height:45px;font-size:1.075em;line-height:1em;padding:0 30px;margin-bottom:12px}
+}@media only screen and (min-width:401px){.Download-Button{margin-bottom:18px}}.Download-Text{text-align:center;font-size:.875em;line-height:1em}
+.Page{background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
+/*# sourceMappingURL=styles.min.css.map */

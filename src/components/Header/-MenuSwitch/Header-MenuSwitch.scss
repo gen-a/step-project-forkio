@@ -1,0 +1,17 @@
+.Header-MenuSwitch {
+
+  flex-basis: 31px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  order: 2;
+
+  @include respond-to-screen(xs) {
+    margin-right: 13px;
+  }
+  @include respond-to-screen(sm) {
+    margin-right: 24px;
+  }
+  @include respond-to-screen(md, lg) {
+    display: none;
+  }
+}

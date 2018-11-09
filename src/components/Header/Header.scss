@@ -1,0 +1,33 @@
+@import '../MenuSwitch/MenuSwitch', './-Logo/Header-Logo', './-Button/Header-Button', './-Navigation/Header-Navigation', './-MenuSwitch/Header-MenuSwitch';
+
+.Header {
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+  position: relative;
+
+  @include respond-to-screen(xs, sm) {
+    height: 105px;
+    padding-top: 32px;
+  }
+  @include respond-to-screen(md) {
+    min-height: 120px;
+    padding-top: 22px;
+    position: sticky;
+  }
+  @include respond-to-screen(lg) {
+    min-height: 100px;
+    padding-top: 30px;
+    position: sticky;
+    z-index: 1;
+  }
+}
+
+.Header-ContentContainer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}

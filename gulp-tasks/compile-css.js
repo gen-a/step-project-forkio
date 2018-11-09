@@ -15,10 +15,10 @@ module.exports = function(options){
 			return stream(
 				gulp.src(options.src),
 				$.if(isDevelopment, $.sourcemaps.init()),
-				$.cached(options.cacheName),
+				//$.cached(options.cacheName),
 				$.sass(),
 				$.autoprefixer({ browsers: autoprefixBrowsers }),
-				$.remember(options.cacheName),
+				//$.remember(options.cacheName),
 				$.base64({
 		            baseDir: options.baseDir,
 		            extensions: [/--base64\.(jpg|jpeg|gif|svg|png)$/i],

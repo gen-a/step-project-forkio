@@ -1,0 +1,45 @@
+$breakpoints:  (xs:(null, 400px), sm:(401px, 480px), md:(481px, 992px), lg:(993px, null));
+
+
+@function get-width-value($a, $b, $min){
+  @if $a == null or $b == null {
+    @return null;
+  }
+  @if $a == 0 {
+    @return $b;
+  }
+  @if ( $a < $b and $min == 1 ) or $a > $b {
+      @return $a;
+  }
+  @return $b;
+}
+ 
+
+@mixin media-screen($min, $max){
+  @if $min == null or $min == 0 {
+    @media only screen and (max-width: $max) { @content; }
+  }
+  @else if $max == null or $max == 0 {
+    @media only screen and (min-width: $min) { @content; }
+  }
+  @else {
+    @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+  }
+}
+
+@mixin respond-to-screen($key...) {
+
+  $min: 0;
+  $max: 0;
+  
+  @for $i from 1 through length($key){
+    $size: map-get($breakpoints, nth($key, $i));
+    $min: get-width-value($min, nth($size, 1), 1);
+    $max: get-width-value($max, nth($size, 2), 0);
+  }
+
+  @include media-screen($min, $max) { 
+    @content;
+  }
+
+}

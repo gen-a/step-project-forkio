@@ -15,7 +15,8 @@ function lazyRequireTask(taskName, path, options){
 }
 
 const cssSrcPath = [
-		'src/components/**/*.{css,sass,scss}'
+		//'src/components/**/*.{css,sass,scss}',
+		'src/components/App/App.scss'
 	];
 const jsSrcPath = [
 		'src/components/**/*.js'
@@ -67,10 +68,10 @@ lazyRequireTask('structure', './gulp-tasks/structure', {
 
 
 gulp.task('watch', function(){
-	gulp.watch(cssSrcPath, gulp.series('compile-css'))
+	gulp.watch('src/components/**/*.{css,sass,scss}', gulp.series('compile-css'))
 		.on('unlink', function(filepath){
-			$.remember.forget('cssCache', path.resolve(filepath));
-			delete $.cached.chaches.cssCache[path.resolve(filepath)];
+			//$.remember.forget('cssCache', path.resolve(filepath));
+			//delete $.cached.chaches.cssCache[path.resolve(filepath)];
 		});
 	gulp.watch(jsSrcPath, gulp.series('compile-js'))
 		.on('unlink', function(filepath){

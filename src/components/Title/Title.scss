@@ -1,0 +1,129 @@
+$color-title-name: #FFFFFF !default;
+$color-title-slogan: #8d81ac !default;
+$color-title-notice: #848e97 !default;
+
+.Title {
+
+  background: #000000 url(../img/title-background.jpg) 50% 0 no-repeat;
+  box-sizing: content-box;
+  font-family: $font-family-monserrat;
+  position: relative;
+  text-align: center;
+
+  @include respond-to-screen(xs) {
+    background-position: 50% -85px;
+    height: 614px;
+  }
+  @include respond-to-screen(sm) {
+    background-position: 50% 0;
+    height: 730px;
+  }
+  @include respond-to-screen(md) {
+    background-position: 50% -63px;
+    height: 682px;
+  }
+  @include respond-to-screen(lg) {
+    background-position: 50% -45px;
+    height: 700px;
+  }
+  &-Text {
+
+    box-sizing: border-box;
+
+    @include respond-to-screen(xs) {
+      height: 236px;
+      padding: 24px 0 0 0;
+    }
+    @include respond-to-screen(sm) {
+      height: 330px;
+      padding: 80px 20px 0 20px;
+    }
+    @include respond-to-screen(md) {
+      height: 261px;
+      padding: 23px 20px 0 20px;
+    }
+    @include respond-to-screen(lg) {
+      height: 279px;
+      padding: 32px 20px 0 20px;
+    }
+  }
+
+  &-Name {
+
+    color: $color-title-name;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+
+    @include respond-to-screen(xs) {
+      font-size: 3em;
+      line-height: 1.25em;
+      padding: 0.125em 0;
+    }
+    @include respond-to-screen(sm) {
+      font-size: 3.5em;
+      letter-spacing: -0.5px;
+      line-height: 1.25em;
+      margin-bottom: 13px;
+      padding: 0.125em 0;
+    }
+    @include respond-to-screen(md) {
+      font-size: 4.5em;
+      letter-spacing: -0.5px;
+      line-height: 1.25em;
+      padding: 0.125em 0;
+
+    }
+    @include respond-to-screen(lg) {
+      font-size: 5em;
+      letter-spacing: 1px;
+      line-height: 1.25em;
+      padding: 0.125em 0;
+    }
+  }
+  &-Slogan {
+
+    color: $color-title-slogan;
+    font-family: $font-family-lato;
+    margin: 0;
+    padding: 0;
+
+    @include respond-to-screen(xs) {
+      font-size: 1.19em;
+      line-height: 1.825em;
+      padding: 0.025em 0;
+      text-transform: capitalize;
+    }
+    @include respond-to-screen(sm) {
+      font-family: $font-family-monserrat;
+      font-size: 1.275em;
+      line-height: 1.75em;
+      margin-bottom: 12px;
+      padding: 0.025em 0;
+      text-transform: capitalize;
+    }
+    @include respond-to-screen(md) {
+      font-size: 1.5em;
+      line-height: 1.375em;
+      padding-bottom: 12px;
+    }
+    @include respond-to-screen(lg) {
+      font-size: 1.875em;
+      line-height: 1.375em;
+      margin: -8px 0 11px 0;
+      padding: 0.025em 0;
+    }
+  }
+  &-Notice {
+
+    color: $color-title-notice;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include respond-to-screen(xs) {
+      font-size: 0.875em;
+      line-height: 1.375em;
+      padding: 0.5em 0;
+    }
+  }
+}

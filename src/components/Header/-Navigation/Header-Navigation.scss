@@ -1,0 +1,89 @@
+$color-header-navigator: #8d81ac !default;
+
+.Header-Navigation {
+
+  flex-grow: 1;
+
+  @include respond-to-screen(xs, sm) {
+    flex-basis: 100%;
+    margin-top: 31px;
+    opacity: 0;
+    order: 4;
+    position: relative;
+    text-align: left;
+    transition: opacity 0.2s;
+    width: 100%;
+    z-index: 2;
+  }
+  &_isActive {
+    @include respond-to-screen(xs, sm) {
+      opacity: 1;
+    }
+  }
+  @include respond-to-screen(md) {
+    flex-grow: 1;
+    padding:11px 0;
+    order: 3;
+    text-align: center;
+  }
+  @include respond-to-screen(lg) {
+    flex-shrink: 1;
+    order: 2;
+    text-align: right;
+  }
+}
+
+.Header-NavigationEntry {
+
+  color: $color-header-navigator;
+  font-size: 1em;
+  line-height: 2em;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: white;
+  }
+
+  @include respond-to-screen(xs, sm) {
+
+    background: #333333;
+    border-bottom: 2px solid #3b3b3b;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: 26px 0 30px 32px;
+    width: 100%;
+
+  }
+  @include respond-to-screen(md) {
+    font-weight: 700;
+    padding: 0 23px;
+  }
+
+  @include respond-to-screen(lg) {
+    font-weight: 700;
+    padding: 0 20px;
+  }
+
+  &_isCurrent {
+    @include respond-to-screen(xs, sm) {
+      color: $color-header-navigator;
+    }
+    &:after {
+      @include respond-to-screen(xs, sm) {
+        background: $color-header-navigator;
+        content: '';
+        height: 54px;
+        left: 0;
+        position: absolute;
+        top: 22px;
+        width: 4px;
+      }
+    }
+  }
+
+}

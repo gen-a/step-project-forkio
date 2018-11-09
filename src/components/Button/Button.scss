@@ -1,0 +1,25 @@
+$color-background-button: #8d81ac !default;
+$color-button: white !default;
+$color-background-button-hover: white !default;
+$color-button-hover: #8d81ac !default;
+
+.Button{
+	background-color:$color-background-button; 
+	border-radius: 20px;
+	border:1px solid $color-background-button;
+	box-sizing: border-box;
+	color:$color-button;
+	cursor: pointer;
+	font-family:$font-family-monserrat;
+	font-size:16px;
+	font-weight:700; 
+	height:40px;
+	outline: none;
+	padding: 0 35px;
+	transition: 0.2s color;
+	white-space: nowrap;
+	&:hover{
+		background-color:$color-background-button-hover; 
+		color:$color-button-hover;
+	}
+}

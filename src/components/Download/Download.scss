@@ -1,0 +1,37 @@
+.Download{
+	@include respond-to-screen(xs) { 
+		margin:-24px 0 24px 0;
+	}
+	@include respond-to-screen(sm, md, lg) { 
+		margin:-32px 0 24px 0;
+	}
+	&-Button{
+		display:block;
+		margin: 0 auto;
+
+		border-radius: 30px;
+		bottom:0;
+		font-size:1.25em;
+		height:60px;
+		letter-spacing: 0.5px;
+		line-height:1em;
+		padding:0 60px;
+
+		@include respond-to-screen(xs) { 
+			border-radius: 23px;
+			height:45px;
+			font-size:1.075em;
+			line-height:1em;
+			padding:0 30px;
+			margin-bottom:12px;
+		}
+		@include respond-to-screen(sm, md, lg) { 
+			margin-bottom:18px;
+		}
+	}
+	&-Text{
+		text-align:center;
+		font-size: 0.875em;
+		line-height:1em;
+	}
+}

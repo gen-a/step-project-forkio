@@ -1,0 +1,25 @@
+.Page-ContentContainer{
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width:1200px;
+	min-width:320px;
+	padding:0 10px;
+	position:relative;
+
+
+
+
+	/*
+	@include respond-to-screen(xs) { 
+		background: green;
+	}
+	@include respond-to-screen(sm) { 
+		background: red;
+	}
+	@include respond-to-screen(md) { 
+		background: yellow;
+	}
+	@include respond-to-screen(lg) { 
+		background: blue;
+	}*/
+}

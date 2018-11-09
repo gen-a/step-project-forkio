@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+          content="height=device-height,width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <title>FORKIO</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+
+</head>
+<body class="App">
+<div class="Page">
+    <div class="Section Section_background_dark">
+        <header class="Header">
+            <div class="Header-ContentContainer">
+                <a href='/' class="Header-Logo" title="Go to Homepage">
+                    <!--<img class="Header-LogoImage" src="img/logo.svg" alt="FORKIO logo"/>-->
+                    <div class="Header-LogoImage"></div>
+                </a>
+
+                <button class="Button Header-Button">
+                    Buy Now
+                </button>
+
+                <a class="Header-MenuSwitch MenuSwitch">
+                    <svg class="MenuSwitch-Icon" x="0px" y="0px" width="31px" height="31px" viewBox="-2 -5.5 31 31">
+                        <path d="M25.5,3h-18C6.671,3,6,2.329,6,1.5S6.671,0,7.5,0h18C26.328,0,27,0.671,27,1.5S26.328,3,25.5,3z"/>
+                        <path d="M25.5,11.5h-24C0.671,11.5,0,10.829,0,10s0.671-1.5,1.5-1.5h24c0.828,0,1.5,0.671,1.5,1.5S26.328,11.5,25.5,11.5z"/>
+                        <path d="M25.5,20h-24C0.671,20,0,19.328,0,18.5S0.671,17,1.5,17h24c0.828,0,1.5,0.672,1.5,1.5S26.328,20,25.5,20z"/>
+                    </svg>
+                    <svg class="MenuSwitch-Icon MenuSwitch-Icon_close" x="0px" y="0px" width="31px" height="31px"
+                         viewBox="-2 -5.5 31 31">
+                        <path d="M17.41,19.531L0.439,2.561c-0.586-0.586-0.586-1.535,0-2.121s1.535-0.586,2.121,0L19.531,17.41
+	c0.586,0.585,0.586,1.535,0,2.121S17.995,20.117,17.41,19.531z"/>
+                        <path d="M19.531,2.561L2.561,19.531c-0.586,0.586-1.536,0.586-2.121,0s-0.586-1.535,0-2.121L17.41,0.439
+	c0.585-0.585,1.535-0.585,2.121,0S20.117,1.975,19.531,2.561z"/>
+                    </svg>
+                </a>
+
+                <nav class="Header-Navigation">
+                    <a href="" class="Header-NavigationEntry">Home</a>
+                    <a href="" class="Header-NavigationEntry Header-NavigationEntry_isCurrent">Overview</a>
+                    <a href="" class="Header-NavigationEntry">About Fork</a>
+                    <a href="" class="Header-NavigationEntry">Buying Options</a>
+                    <a href="" class="Header-NavigationEntry">Support</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="Section Section_background_darkest">
+
+        <section class="Title">
+            <div class="Page-ContentContainer">
+                <div class="Title-Text">
+
+
+                    <h1 class="Title-Name">
+                        Fork App
+                    </h1>
+                    <p class="Title-Slogan">
+                        A real gamechanger in the world of web development
+                    </p>
+                    <p class="Title-Notice">
+                        v. 2.8 For Mac and Windows
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div class="Section Download">
+        <div class="Page-ContentContainer">
+            <button class="Button Download-Button">
+                Download For Free Now
+            </button>
+            <div class="Download-Text">
+                Unlimited 30-Days Trial Period
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Section Section_background_light">
+        <div class="Page-ContentContainer">
+            what you get
+        </div>
+    </div>
+    <div class="Section Section_background_lightest">
+        <div class="Page-ContentContainer">
+            feedback
+        </div>
+    </div>
+    <div class="Section Section_background_medium">
+        <div class="Page-ContentContainer">
+            people talking
+        </div>
+    </div>
+    <div class="Section Section_background_medium">
+        <div class="Page-ContentContainer">
+            what you get
+        </div>
+    </div>
+    <div class="Section Section_background_light">
+        <div class="Page-ContentContainer">
+            subscribe
+        </div>
+    </div>
+    <div class="Section Section_background_lightest">
+        <div class="Page-ContentContainer">
+            footer
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    let addClass = function (elements, className) {
+        elements.forEach(element => element.classList.add(className));
+    };
+    let removeClass = function (elements, className) {
+        elements.forEach(element => element.classList.remove(className));
+    };
+
+    document.querySelector('.Header-MenuSwitch').addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let navActiveClass = "Header-Navigation_isActive",
+            classList = document.querySelectorAll(".Header-Navigation")[0].classList;
+
+        if (classList.contains(navActiveClass)) {
+            removeClass(document.querySelectorAll(".MenuSwitch"), "MenuSwitch_isOpen");
+            classList.remove(navActiveClass);
+        } else {
+            addClass(document.querySelectorAll(".MenuSwitch"), "MenuSwitch_isOpen");
+            classList.add(navActiveClass);
+        }
+        return false;
+    })
+
+</script>
+</body>
+</html>
