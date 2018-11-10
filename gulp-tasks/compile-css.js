@@ -27,6 +27,7 @@ module.exports = function(options){
 		            debug: true
 		        }),
 				$.concat(options.fileName),
+                $.groupCssMediaQueries(),
 				$.uglifycss({
 					maxLineLen : 80,
 					uglifyComments:true

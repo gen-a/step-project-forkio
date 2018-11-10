@@ -1,37 +1,125 @@
-.Download{
-	@include respond-to-screen(xs) { 
-		margin:-24px 0 24px 0;
-	}
-	@include respond-to-screen(sm, md, lg) { 
-		margin:-32px 0 24px 0;
-	}
-	&-Button{
-		display:block;
-		margin: 0 auto;
+@import '../GitHubStat/GitHubStat';
 
-		border-radius: 30px;
-		bottom:0;
-		font-size:1.25em;
-		height:60px;
-		letter-spacing: 0.5px;
-		line-height:1em;
-		padding:0 60px;
+.Download {
+  @include respond-to-screen(xs) {
+    margin: -24px 0 68px 0;
+  }
+  @include respond-to-screen(sm) {
+    margin: -32px 0 58px 0;
+  }
+  @include respond-to-screen(md) {
+    margin: -32px 0 79px 0;
+  }
+  @include respond-to-screen(lg) {
+    margin: -32px 0 53px 0;
+  }
+  &-Button {
+    display: block;
+    margin: 0 auto;
 
-		@include respond-to-screen(xs) { 
-			border-radius: 23px;
-			height:45px;
-			font-size:1.075em;
-			line-height:1em;
-			padding:0 30px;
-			margin-bottom:12px;
-		}
-		@include respond-to-screen(sm, md, lg) { 
-			margin-bottom:18px;
-		}
-	}
-	&-Text{
-		text-align:center;
-		font-size: 0.875em;
-		line-height:1em;
-	}
+    border-radius: 30px;
+    bottom: 0;
+    font-size: 1.25em;
+    height: 60px;
+    letter-spacing: 0.5px;
+    line-height: 1em;
+    padding: 0 60px;
+
+    @include respond-to-screen(xs) {
+      border-radius: 23px;
+      height: 45px;
+      font-size: 1.075em;
+      line-height: 1em;
+      padding: 0 30px;
+      margin-bottom: 12px;
+    }
+    @include respond-to-screen(sm, md, lg) {
+      margin-bottom: 18px;
+    }
+  }
+  &-Text {
+
+    font-size: 0.875em;
+    line-height: 1em;
+    text-align: center;
+  }
+  &-IntroBlock {
+    text-align: center;
+
+    @include respond-to-screen(xs) {
+      margin-bottom: 7px;
+      padding: 56px 0 5px 0;
+    }
+    @include respond-to-screen(sm) {
+      margin-bottom: 5px;
+      padding: 54px 0 5px 0;
+    }
+    @include respond-to-screen(md) {
+      margin-bottom: 2px;
+      padding: 74px 0 5px 0;
+    }
+    @include respond-to-screen(lg) {
+      margin-bottom: 4px;
+      padding: 44px 0 5px 0;
+    }
+  }
+  &-IntroTitle {
+    color: #635c73;
+    font-weight: 700;
+    margin: 0px;
+    text-transform: uppercase;
+
+    @include respond-to-screen(xs) {
+      font-size: 1.675em;
+      line-height: 1.5em;
+      padding: 0.25em 0;
+    }
+    @include respond-to-screen(sm) {
+      font-size: 2.5em;
+      letter-spacing: 1.5px;
+      line-height: 1.25em;
+      margin-bottom: 19px;
+      padding: 0.25em 0;
+    }
+    @include respond-to-screen(md) {
+      font-size: 2.5em;
+      letter-spacing: 1.5px;
+      line-height: 1.25em;
+      margin-bottom: 2px;
+      padding: 0.25em 0;
+    }
+    @include respond-to-screen(lg) {
+      font-size: 3.25em;
+      letter-spacing: 1.5px;
+      line-height: 1.25em;
+      padding: 0.25em 0;
+    }
+  }
+  &-IntroText {
+
+    font-family: $font-family-lato;
+    margin: 0 auto;
+
+    @include respond-to-screen(xs) {
+      font-size: 0.875em;
+      line-height: 1.375em;
+      padding: 0.25em 1rem;
+    }
+    @include respond-to-screen(sm) {
+      font-size: 1em;
+      line-height:  1.575em;
+      padding: .5em 0;
+    }
+    @include respond-to-screen(md) {
+      font-size: 1.25em;
+      line-height:  1.575em;
+      padding: .5em .5rem;
+    }
+    @include respond-to-screen(lg) {
+      font-size: 1.25em;
+      line-height:  1.575em;
+      max-width:930px;
+      padding: .25em 2rem;
+    }
+  }
 }
