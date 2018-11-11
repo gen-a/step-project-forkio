@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:600i");.Button{background-color:#8d81ac;-webkit-border-radius:20px;border-radius:20px;border:1px solid #8d81ac;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;cursor:pointer;font-family:"Montserrat",sans-serif;font-size:16px;font-weight:700;height:40px;outline:0;padding:0 35px;-webkit-transition:.2s color;-o-transition:.2s color;transition:.2s color;white-space:nowrap}
-.Button:hover{background-color:white;color:#8d81ac}.Section_background_lightest{background-color:white}
+.Button:hover{background-color:white;color:#8d81ac}.Section{overflow:hidden}.Section_background_lightest{background-color:white}
 .Section_background_light{background-color:#f4f4f4}.Section_background_medium{background-color:#777}
 .Section_background_dark{background-color:#27262a}.Section_background_darkest{background-color:#000}
 .Section_position_sticky{position:-webkit-sticky;position:sticky;top:0;z-index:1}
-.Page-ContentContainer{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;max-width:1200px;min-width:320px;padding:0 1rem;position:relative}
-.Page-ContentContainer_padding_0{padding:0}.MenuSwitch{cursor:pointer;height:31px;width:31px}
-.MenuSwitch path{fill:#8d81ac;-webkit-transition:fill .2s;-o-transition:fill .2s;transition:fill .2s}
+.Page-ContentContainer{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0 auto;max-width:1200px;min-width:320px;padding:0 1rem;position:relative}
+.MenuSwitch{cursor:pointer;height:31px;width:31px}.MenuSwitch path{fill:#8d81ac;-webkit-transition:fill .2s;-o-transition:fill .2s;transition:fill .2s}
 .MenuSwitch:hover path{fill:#fff}.MenuSwitch-Icon_close{display:none}.MenuSwitch_isOpen .MenuSwitch-Icon{display:none}
 .MenuSwitch_isOpen .MenuSwitch-Icon_close{display:block}.Header-Logo{display:block;-webkit-flex-basis:149px;-ms-flex-preferred-size:149px;flex-basis:149px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;height:41px;-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;overflow:hidden}
 .Header-LogoImage{background:url(../img/logo.svg);-webkit-background-size:cover;background-size:cover;display:block;height:41px;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s;width:149px}
@@ -27,10 +26,9 @@
 .Download-Text{font-size:.875em;line-height:1em;text-align:center}.Download-IntroBlock{text-align:center}
 .Download-IntroTitle{color:#635c73;font-weight:700;margin:0;text-transform:uppercase}
 .Download-IntroText{font-family:"Lato",sans-serif;margin:0 auto}
-.About-Title{font-weight:700;color:#8d81ac;margin:0;text-align:center}.About-Picture{overflow:hidden;padding:0 1rem}
-.About-EntryBlockImage{overflow:hidden}.About-EntryBlockImage img{display:block;margin:0 auto}
-.About-EntryBlockText{-webkit-box-sizing:border-box;box-sizing:border-box}.About-EntryBlockTitle{color:#323232;font-size:1.025em;line-height:1.375em}
-.About-EntryBlockInfo{color:#848e97;font-family:"Lato",sans-serif;font-size:.875em;line-height:1.5em;text-align:center}
+.About-Title{font-weight:700;color:#8d81ac;margin:0;text-align:center}.About-Picture{padding:0 1rem}
+.About-EntryBlockImage img{display:block;margin:0 auto}.About-EntryBlockText{-webkit-box-sizing:border-box;box-sizing:border-box}
+.About-EntryBlockTitle{color:#323232;font-size:1.025em;line-height:1.375em}.About-EntryBlockInfo{color:#848e97;font-size:.875em;line-height:1.5em;text-align:center}
 .Page{background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
 @media only screen and (min-width:401px){.Download-Button{margin-bottom:18px}.About-EntryBlock{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:14px 0}
@@ -45,11 +43,13 @@
 .GitHubStat-Button{font-size:12px;line-height:12px;padding:4px 12px}.Download{margin:-32px 0 53px 0}
 .Download-IntroBlock{margin-bottom:4px;padding:44px 0 5px 0}.Download-IntroTitle{font-size:3.25em;letter-spacing:1.5px;line-height:1.25em;padding:.25em 0}
 .Download-IntroText{font-size:1.25em;line-height:1.575em;max-width:930px;padding:.25em 2rem}
-.About{display:grid;grid-template-columns:50% 50%;grid-template-rows:auto 1fr}.About-Title{font-size:3em;letter-spacing:-0.5px;line-height:1.175em;margin:28px 0 2px 0;padding:1em 0;text-align:left;grid-column:2;grid-row:1}
+.About{display:grid;grid-template-columns:50% 50%;grid-template-rows:auto 1fr}.About-Title{font-size:3em;line-height:1.175em;margin:28px 0 2px 12px;padding:1em 0;text-align:left;grid-column:2;grid-row:1}
 .About-Text{grid-column:1;grid-row:1 / span 2;margin-top:87px}.About-Picture{grid-column:2;grid-row:2}
-.About-EntryBlock{margin-bottom:37px}.About-EntryBlockImage{-webkit-flex-basis:100px;-ms-flex-preferred-size:100px;flex-basis:100px;width:100px}
-.About-EntryBlockText{padding:0 60px 0 35px;max-width:400px}.About-EntryBlockTitle{padding:.5em 0;text-align:left}
-.About-EntryBlockInfo{font-size:.875em;line-height:1.5em;text-align:left}}@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:2}
+.About-PictureImg{width:982px;margin:-26px 0 0 -28px}.About-EntryBlock{margin-bottom:37px}
+.About-EntryBlockImage{-webkit-flex-basis:100px;-ms-flex-preferred-size:100px;flex-basis:100px;width:100px}
+.About-EntryBlockText{-webkit-box-sizing:content-box;box-sizing:content-box;padding:0 26px 0 35px;max-width:380px}
+.About-EntryBlockTitle{padding:.5em 0;text-align:left}.About-EntryBlockInfo{font-size:.875em;line-height:1.6em;text-align:left}
+}@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:2}
 .Header-Navigation_isActive{opacity:1}.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
 .Header-NavigationEntry_isCurrent{color:#8d81ac}.Header-NavigationEntry_isCurrent:after{background:#8d81ac;content:'';height:54px;left:0;position:absolute;top:22px;width:4px}
 .Header{height:105px;padding-top:32px}.About-EntryBlockText{padding:0 26px 0 10px}
@@ -65,7 +65,7 @@
 .Download-IntroText{font-size:.875em;line-height:1.375em;padding:.25em 1rem}.About-Title{font-size:2em;line-height:1.125em;margin-bottom:4px;padding:1em}
 .About-Text{margin-bottom:57px}.About-Picture{margin-bottom:57px}.About-PictureImg{width:710px}
 .About-EntryBlock{margin-bottom:31px}.About-EntryBlockImage{margin-bottom:16px}.About-EntryBlockImageSvg_04{-webkit-transform:translateX(9px);-ms-transform:translateX(9px);transform:translateX(9px)}
-.About-EntryBlockTitle{margin-bottom:2px;padding:.5em 10px;text-align:center}.About-EntryBlockInfo{padding:0 10px;text-align:center}
+.About-EntryBlockTitle{margin-bottom:2px;padding:.5em 10px;text-align:center}.About-EntryBlockInfo{font-family:"Lato",sans-serif;padding:0 10px;text-align:center}
 }@media only screen and (min-width:401px) and (max-width:480px){.Header-Logo{margin-left:24px}
 .Header-Button{-webkit-border-radius:21px;border-radius:21px;height:42px;font-size:1em;line-height:1em;padding:0 26px}
 .Header-MenuSwitch{margin-right:24px}.Title{background-position:50% 0;height:730px}
@@ -76,7 +76,8 @@
 .Download-IntroBlock{margin-bottom:5px;padding:54px 0 5px 0}.Download-IntroTitle{font-size:2.5em;letter-spacing:1.5px;line-height:1.25em;margin-bottom:19px;padding:.25em 0}
 .Download-IntroText{font-size:1em;line-height:1.575em;padding:.5em 0}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:9px;padding:1em}
 .About-Text{margin-bottom:41px}.About-PictureImg{width:970px}.About-EntryBlock{margin-bottom:33px}
-.About-EntryBlockInfo{text-align:left}}@media only screen and (min-width:481px) and (max-width:992px){.Header-Button{margin-right:20px}
+.About-EntryBlockInfo{font-family:"Lato",sans-serif;text-align:left}
+}@media only screen and (min-width:481px) and (max-width:992px){.Header-Button{margin-right:20px}
 .Header-Navigation{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding:11px 0;-webkit-box-ordinal-group:4;-webkit-order:3;-ms-flex-order:3;order:3;text-align:center}
 .Header-NavigationEntry{font-weight:700;padding:0 23px}.Header{min-height:120px;padding-top:22px;position:-webkit-sticky;position:sticky}
 .Title{background-position:50% -63px;height:682px}.Title-Text{height:261px;padding:23px 20px 0 20px}
@@ -86,8 +87,8 @@
 .Download{margin:-32px 0 79px 0}.Download-IntroBlock{margin-bottom:2px;padding:74px 0 5px 0}
 .Download-IntroTitle{font-size:2.5em;letter-spacing:1.5px;line-height:1.25em;margin-bottom:2px;padding:.25em 0}
 .Download-IntroText{font-size:1.25em;line-height:1.575em;padding:.5em .5rem}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:2px;padding:1em}
-.About-Text{margin-bottom:53px}.About-PictureImg{width:970px}.About-EntryBlock{margin-bottom:37px}
-.About-EntryBlockText{padding:0 26px 0 15px}.About-EntryBlockInfo{font-size:1em;line-height:1.375em;text-align:left}
+.About-Text{margin-bottom:53px}.About-PictureImg{width:982px}.About-EntryBlock{margin-bottom:37px}
+.About-EntryBlockText{padding:0 26px 0 15px}.About-EntryBlockInfo{font-family:"Lato",sans-serif;font-size:1em;line-height:1.375em;text-align:left}
 }@media only screen and (min-width:401px) and (max-width:992px){.About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;width:150px}
 .About-EntryBlockTitle{padding:.5em 0;text-align:left}}
 /*# sourceMappingURL=styles.min.css.map */
