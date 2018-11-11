@@ -38,9 +38,8 @@ $color-about-title: #8d81ac !default;
     @include respond-to-screen(lg) {
 
       font-size: 3em;
-      letter-spacing: -0.5px;
       line-height: 1.175em;
-      margin:28px 0 2px 0;
+      margin:28px 0 2px 12px;
       padding: 1em 0;
       text-align:left;
       grid-column: 2;
@@ -66,7 +65,6 @@ $color-about-title: #8d81ac !default;
   }
   &-Picture {
 
-    overflow: hidden;
     padding: 0 $layout-aside-padding;
 
     @include respond-to-screen(xs) {
@@ -84,7 +82,11 @@ $color-about-title: #8d81ac !default;
         width: 970px;
       }
       @include respond-to-screen(md) {
-        width: 970px;
+          width: 982px;
+       }
+      @include respond-to-screen(lg) {
+        width: 982px;
+        margin:-26px 0 0 -28px;
       }
     }
   }
@@ -112,8 +114,6 @@ $color-about-title: #8d81ac !default;
     }
   }
   &-EntryBlockImage {
-
-    overflow: hidden;
 
     & img {
       display: block;
@@ -152,8 +152,9 @@ $color-about-title: #8d81ac !default;
       padding: 0 26px 0 15px ;
     }
     @include respond-to-screen(lg) {
-      padding: 0 60px 0 35px;
-      max-width:400px;
+      box-sizing: content-box;
+      padding: 0 26px 0 35px;
+      max-width: 380px;
     }
   }
   &-EntryBlockTitle {
@@ -182,26 +183,28 @@ $color-about-title: #8d81ac !default;
   &-EntryBlockInfo {
 
     color: #848e97;
-    font-family: $font-family-lato;
     font-size: .875em;
     line-height: 1.5em;
     text-align: center;
 
     @include respond-to-screen(xs) {
+      font-family: $font-family-lato;
       padding: 0 10px;
       text-align: center;
     }
     @include respond-to-screen(sm) {
-        text-align: left;
+      font-family: $font-family-lato;
+      text-align: left;
      }
     @include respond-to-screen(md) {
+      font-family: $font-family-lato;
       font-size: 1em;
       line-height: 1.375em;
       text-align: left;
     }
     @include respond-to-screen(lg) {
       font-size: 0.875em;
-      line-height: 1.5em;
+      line-height: 1.6em;
       text-align: left;
     }
   }

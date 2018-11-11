@@ -1,29 +1,10 @@
 $layout-aside-padding: 1rem !default;
 
 .Page-ContentContainer{
-	box-sizing: border-box;
+	box-sizing: content-box;
 	margin:0 auto;
 	max-width:1200px;
 	min-width:320px;
 	padding:0 $layout-aside-padding;
 	position:relative;
-
-
-	&_padding_0{
-		padding:0;
-	}
-
-	/*
-	@include respond-to-screen(xs) { 
-		background: green;
-	}
-	@include respond-to-screen(sm) { 
-		background: red;
-	}
-	@include respond-to-screen(md) { 
-		background: yellow;
-	}
-	@include respond-to-screen(lg) { 
-		background: blue;
-	}*/
 }
