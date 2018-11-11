@@ -52,10 +52,10 @@ $color-about-title: #8d81ac !default;
       margin-bottom: 57px;
     }
     @include respond-to-screen(sm) {
-      margin-bottom: 41px;
+      margin-bottom: 0;
     }
     @include respond-to-screen(md) {
-      margin-bottom: 53px;
+      margin-bottom: 46px;
     }
     @include respond-to-screen(lg) {
       grid-column: 1;
@@ -76,16 +76,16 @@ $color-about-title: #8d81ac !default;
     }
     &Img {
       @include respond-to-screen(xs) {
-        width: 710px;
+        width: 720px;
+        margin-left: -30px;
       }
       @include respond-to-screen(sm) {
-        width: 970px;
+        margin-left: -22px;
       }
       @include respond-to-screen(md) {
-          width: 982px;
+        margin-left: -24px;
        }
       @include respond-to-screen(lg) {
-        width: 982px;
         margin:-26px 0 0 -28px;
       }
     }

@@ -6,10 +6,10 @@ Step project **FORKIO**
 ## Files Structure
 
 - \src
- - \components
- - \images
- - \fonts
- - \icons
+    - \components
+    - \images
+    - \fonts
+    - \icons
 
 ## BEM naming structure
 
@@ -17,6 +17,6 @@ Schema for class naming: **BlockName-ElementName_modificatorName_modificatorValu
 File structure 
 
 - \BlockName
- - \_modificatorName
- - \-ElementName
-  - \_modificatorName
+    - \_modificatorName
+    - \-ElementName
+        - \_modificatorName
