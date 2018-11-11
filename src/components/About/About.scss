@@ -1,0 +1,209 @@
+$color-about-title: #8d81ac !default;
+
+.About {
+
+  @include respond-to-screen(lg) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr;
+  }
+
+  &-Title {
+
+    font-weight: 700;
+    color: $color-about-title;
+    margin:0;
+    text-align: center;
+
+    @include respond-to-screen(xs) {
+      font-size: 2em;
+      line-height: 1.125em;
+      margin-bottom: 4px;
+      padding: 1em;
+    }
+    @include respond-to-screen(sm ) {
+      font-size: 2.75em;
+      letter-spacing: -0.5px;
+      line-height: 1.175em;
+      margin-bottom: 9px;
+      padding: 1em;
+    }
+    @include respond-to-screen( md) {
+      font-size: 2.75em;
+      letter-spacing: -0.5px;
+      line-height: 1.175em;
+      margin-bottom: 2px;
+      padding: 1em;
+    }
+    @include respond-to-screen(lg) {
+
+      font-size: 3em;
+      letter-spacing: -0.5px;
+      line-height: 1.175em;
+      margin:28px 0 2px 0;
+      padding: 1em 0;
+      text-align:left;
+      grid-column: 2;
+      grid-row: 1;
+
+    }
+  }
+  &-Text {
+    @include respond-to-screen(xs) {
+      margin-bottom: 57px;
+    }
+    @include respond-to-screen(sm) {
+      margin-bottom: 41px;
+    }
+    @include respond-to-screen(md) {
+      margin-bottom: 53px;
+    }
+    @include respond-to-screen(lg) {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      margin-top: 87px;
+    }
+  }
+  &-Picture {
+
+    overflow: hidden;
+    padding: 0 $layout-aside-padding;
+
+    @include respond-to-screen(xs) {
+      margin-bottom: 57px;
+    }
+    @include respond-to-screen(lg) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    &Img {
+      @include respond-to-screen(xs) {
+        width: 710px;
+      }
+      @include respond-to-screen(sm) {
+        width: 970px;
+      }
+      @include respond-to-screen(md) {
+        width: 970px;
+      }
+    }
+  }
+
+
+
+  &-EntryBlock {
+
+    @include respond-to-screen(xs) {
+      margin-bottom: 31px;
+    }
+    @include respond-to-screen(sm, md, lg) {
+      align-items: stretch;
+      display: flex;
+      justify-content: flex-start;
+    }
+    @include respond-to-screen(sm) {
+      margin-bottom: 33px;
+    }
+    @include respond-to-screen(md) {
+      margin-bottom: 37px;
+    }
+    @include respond-to-screen(lg) {
+      margin-bottom: 37px;
+    }
+  }
+  &-EntryBlockImage {
+
+    overflow: hidden;
+
+    & img {
+      display: block;
+      margin: 0 auto;
+    }
+    @include respond-to-screen(xs) {
+      margin-bottom: 16px;
+    }
+    @include respond-to-screen(sm, md, lg) {
+      flex-basis: 150px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding: 14px 0;
+    }
+    @include respond-to-screen(sm, md) {
+      flex-basis: 150px;
+      width: 150px;
+    }
+    @include respond-to-screen(lg) {
+      flex-basis: 100px;
+      width: 100px;
+    }
+    &Svg_04 {
+      @include respond-to-screen(xs) {
+        transform: translateX(9px);
+      }
+    }
+  }
+  &-EntryBlockText {
+    box-sizing: border-box;
+
+    @include respond-to-screen(xs, sm) {
+      padding: 0 26px 0 10px;
+    }
+    @include respond-to-screen(md) {
+      padding: 0 26px 0 15px ;
+    }
+    @include respond-to-screen(lg) {
+      padding: 0 60px 0 35px;
+      max-width:400px;
+    }
+  }
+  &-EntryBlockTitle {
+
+    color: #323232;
+    font-size: 1.025em;
+    line-height: 1.375em;
+
+    @include respond-to-screen(xs) {
+      margin-bottom: 2px;
+      padding: 0.5em 10px;
+      text-align: center;
+
+    }
+    @include respond-to-screen(sm, md) {
+      padding: 0.5em 0;
+      text-align: left;
+
+    }
+    @include respond-to-screen(lg) {
+      padding: 0.5em 0;
+      text-align: left;
+
+    }
+  }
+  &-EntryBlockInfo {
+
+    color: #848e97;
+    font-family: $font-family-lato;
+    font-size: .875em;
+    line-height: 1.5em;
+    text-align: center;
+
+    @include respond-to-screen(xs) {
+      padding: 0 10px;
+      text-align: center;
+    }
+    @include respond-to-screen(sm) {
+        text-align: left;
+     }
+    @include respond-to-screen(md) {
+      font-size: 1em;
+      line-height: 1.375em;
+      text-align: left;
+    }
+    @include respond-to-screen(lg) {
+      font-size: 0.875em;
+      line-height: 1.5em;
+      text-align: left;
+    }
+  }
+
+}
