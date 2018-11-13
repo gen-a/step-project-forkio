@@ -1,4 +1,10 @@
-@import './-ContentContainer/Page-ContentContainer', '../Header/Header', '../Title/Title', '../Download/Download', '../About/About';
+@import './-ContentContainer/Page-ContentContainer',
+		'../Header/Header',
+		'../Title/Title',
+		'../Download/Download',
+		'../About/About',
+		'../Feedback/Feedback',
+		'../FeedbackCard/FeedbackCard';
 
 .Page{
 	background:white;

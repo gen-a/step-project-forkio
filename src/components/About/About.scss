@@ -19,21 +19,21 @@ $color-about-title: #8d81ac !default;
       font-size: 2em;
       line-height: 1.125em;
       margin-bottom: 4px;
-      padding: 1em;
+      padding: 1em 0.25em;
     }
     @include respond-to-screen(sm ) {
       font-size: 2.75em;
       letter-spacing: -0.5px;
       line-height: 1.175em;
       margin-bottom: 9px;
-      padding: 1em;
+      padding: 1em 0.25em;
     }
     @include respond-to-screen( md) {
       font-size: 2.75em;
       letter-spacing: -0.5px;
       line-height: 1.175em;
       margin-bottom: 2px;
-      padding: 1em;
+      padding: 1em 0.25em;
     }
     @include respond-to-screen(lg) {
 
@@ -68,7 +68,7 @@ $color-about-title: #8d81ac !default;
     padding: 0 $layout-aside-padding;
 
     @include respond-to-screen(xs) {
-      margin-bottom: 57px;
+      margin-bottom: 0px;
     }
     @include respond-to-screen(lg) {
       grid-column: 2;
@@ -146,7 +146,7 @@ $color-about-title: #8d81ac !default;
     box-sizing: border-box;
 
     @include respond-to-screen(xs, sm) {
-      padding: 0 26px 0 10px;
+      padding: 0 10px 0 10px;
     }
     @include respond-to-screen(md) {
       padding: 0 26px 0 15px ;

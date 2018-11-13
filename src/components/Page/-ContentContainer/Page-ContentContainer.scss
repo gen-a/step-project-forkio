@@ -1,9 +1,9 @@
-$layout-aside-padding: 1rem !default;
+$layout-aside-padding: 16px !default;
 
 .Page-ContentContainer{
-	box-sizing: content-box;
+	box-sizing: border-box;
 	margin:0 auto;
-	max-width:1200px;
+	max-width:(1200px + $layout-aside-padding * 2);
 	min-width:320px;
 	padding:0 $layout-aside-padding;
 	position:relative;

@@ -1,54 +1,50 @@
 'use strict';
- 
+
 const $ = require('gulp-load-plugins')();
 const gulp = require('gulp');
+const browserify = require('browserify');
+const babelify = require('babelify');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
 const stream = require('stream-combiner2').obj;
 
-const isDevelopment = ! process.env.NODE_ENV || process.env.NODE_ENV == 'development';
+const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 module.exports = function (options) {
-    return function () {
-    
+    return function (done) {
+
+        options.src.map(function (entry) {
+
             return stream(
-                gulp.src(options.src),
-                $.if(isDevelopment, $.sourcemaps.init()),
-                $.cached(options.cacheName),
-                $.remember(options.cacheName),
 
-                $.eslint(),
-                $.eslint.format(),
-                $.eslint.failAfterError(),
+                browserify({
+                    entries: [entry],
+                    debug: true
+                })
+                    .transform(babelify, {presets: ['@babel/env']})
+                    .bundle(),
+                source(entry),
+                $.rename(function (path) {
+                    let baseName = (src) => {
+                       return src
+                           .replace(/^([A-Z])/, (g) => `${g[0].toLowerCase()}`)
+                           .replace(/([A-Z])/g, (g) => `-${g[0].toLowerCase()}`);
+                    };
 
-                $.babel({presets: ['@babel/env']}),
-                $.concat(options.fileName),
+                    path.dirname = "";
+                    path.basename = baseName(path.basename);
+                    path.extname = ".min.js";
+                }),
+                buffer(),
+                $.if(isDevelopment, $.sourcemaps.init({loadMaps:true})),
                 $.uglify(),
-
-                $.if(isDevelopment, $.sourcemaps.write('.')),
+                $.if(isDevelopment, $.sourcemaps.write('./')),
                 gulp.dest(options.dest)
-            ).on('error', $.notify.onError());
+            ).
+            on('error', $.notify.onError());
+        });
 
+        return done();
+    };
 
-
-
-
-
-        //return combiner(
-            //gulp.src(options.src),
-            //$.cached(options.cacheName),
-            //$.remember(options.cacheName),
-
-            //$.if((file) => file.extname == '.js', $.eslint()),
-            //$.if((file) => file.extname == '.js', $.eslint.format()),
-            //$.if((file) => file.extname == '.js', $.eslint.failAfterError()),
- 
-            //$.if((file) => file.extname == '.ts', $.tslint()),
-            //$.if((file) => file.extname == '.ts', $.typescript({target: 'ES6'})),
- 
-            //$.babel({presets: ['es2015', 'stage-0']}),
-            //$.concat(options.fileName),
-            //$.uglify(),
-
-            //gulp.dest(options.dest)
-        //).on('error', $.notify.onError());
-    }
 };

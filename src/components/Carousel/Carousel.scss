@@ -1,0 +1,18 @@
+.Carousel{
+  &-Screen{
+    overflow: hidden;
+  }
+  &-Items{
+    display:flex;
+    transform:translateX(0);
+    transition: transform .6s ease,-webkit-transform .6s ease;
+  }
+  &-Item{
+
+    flex-basis:100%;
+    width:100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+}

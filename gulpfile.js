@@ -19,7 +19,7 @@ const cssSrcPath = [
 		'src/components/App/App.scss'
 	];
 const jsSrcPath = [
-		'src/components/**/*.js'
+		'src/components/App/App.js'
 	];
 
 lazyRequireTask('serve', './gulp-tasks/serve', {
@@ -73,10 +73,10 @@ gulp.task('watch', function(){
 			//$.remember.forget('cssCache', path.resolve(filepath));
 			//delete $.cached.chaches.cssCache[path.resolve(filepath)];
 		});
-	gulp.watch(jsSrcPath, gulp.series('compile-js'))
+	gulp.watch('src/components/**/*.js', gulp.series('compile-js'))
 		.on('unlink', function(filepath){
-			$.remember.forget('jsCache', path.resolve(filepath));
-			delete $.cached.chaches.jsCache[path.resolve(filepath)];
+			//$.remember.forget('jsCache', path.resolve(filepath));
+			//delete $.cached.chaches.jsCache[path.resolve(filepath)];
 		});
 
 	gulp.watch('src/img/**', gulp.series('img'));
