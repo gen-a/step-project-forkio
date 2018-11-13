@@ -3,7 +3,7 @@
 .Section_background_light{background-color:#f4f4f4}.Section_background_medium{background-color:#777}
 .Section_background_dark{background-color:#27262a}.Section_background_darkest{background-color:#000}
 .Section_position_sticky{position:-webkit-sticky;position:sticky;top:0;z-index:1}
-.Page-ContentContainer{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0 auto;max-width:1200px;min-width:320px;padding:0 1rem;position:relative}
+.Page-ContentContainer{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;max-width:1232px;min-width:320px;padding:0 16px;position:relative}
 .MenuSwitch{cursor:pointer;height:31px;width:31px}.MenuSwitch path{fill:#8d81ac;-webkit-transition:fill .2s;-o-transition:fill .2s;transition:fill .2s}
 .MenuSwitch:hover path{fill:#fff}.MenuSwitch-Icon_close{display:none}.MenuSwitch_isOpen .MenuSwitch-Icon{display:none}
 .MenuSwitch_isOpen .MenuSwitch-Icon_close{display:block}.Header-Logo{display:block;-webkit-flex-basis:149px;-ms-flex-preferred-size:149px;flex-basis:149px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;height:41px;-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;overflow:hidden}
@@ -26,9 +26,20 @@
 .Download-Text{font-size:.875em;line-height:1em;text-align:center}.Download-IntroBlock{text-align:center}
 .Download-IntroTitle{color:#635c73;font-weight:700;margin:0;text-transform:uppercase}
 .Download-IntroText{font-family:"Lato",sans-serif;margin:0 auto}
-.About-Title{font-weight:700;color:#8d81ac;margin:0;text-align:center}.About-Picture{padding:0 1rem}
+.About-Title{font-weight:700;color:#8d81ac;margin:0;text-align:center}.About-Picture{padding:0 16px}
 .About-EntryBlockImage img{display:block;margin:0 auto}.About-EntryBlockText{-webkit-box-sizing:border-box;box-sizing:border-box}
 .About-EntryBlockTitle{color:#323232;font-size:1.025em;line-height:1.375em}.About-EntryBlockInfo{color:#848e97;font-size:.875em;line-height:1.5em;text-align:center}
+.Carousel-Screen{overflow:hidden}.Carousel-Items{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);transition:transform .6s ease,-webkit-transform .6s ease}
+.Carousel-Item{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;width:100%;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0}
+.Feedback{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin:0 10px}
+.Feedback-Entry{-webkit-flex-basis:200px;-ms-flex-preferred-size:200px;flex-basis:200px;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;position:relative}
+.Feedback-Arrow{display:block;-webkit-flex-basis:30px;-ms-flex-preferred-size:30px;flex-basis:30px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;width:30px;height:30px}
+.FeedbackCard{width:100%;margin:0;padding:2em 0}.FeedbackCard-Author{margin-bottom:8px}
+.FeedbackCard-Avatar{-webkit-border-radius:50%;border-radius:50%;margin:0 auto 13px auto;width:85px;height:85px;overflow:hidden}
+.FeedbackCard-Name{color:#474747;font-size:1.5em;line-height:1.25em;padding:.25em 0;font-weight:700;text-align:center;margin:0}
+.FeedbackCard-Nick{color:#8d81ac;text-align:center;margin:-5px auto 0 auto;display:block}
+.FeedbackCard-Text{font-family:"Lato",sans-serif;line-height:1.5em;text-align:center;padding:.5em 0;margin:0}
+.FeedbackCard-Text a{color:#8d81ac}.FeedbackCard-Time{color:#848e97;margin-top:-6px;text-align:center;padding:.5em 0}
 .Page{background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
 @media only screen and (min-width:401px){.Download-Button{margin-bottom:18px}.About-EntryBlock{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:14px 0}
@@ -51,7 +62,7 @@
 }@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:2}
 .Header-Navigation_isActive{opacity:1}.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
 .Header-NavigationEntry_isCurrent{color:#8d81ac}.Header-NavigationEntry_isCurrent:after{background:#8d81ac;content:'';height:54px;left:0;position:absolute;top:22px;width:4px}
-.Header{height:105px;padding-top:32px}.About-EntryBlockText{padding:0 26px 0 10px}
+.Header{height:105px;padding-top:32px}.About-EntryBlockText{padding:0 10px 0 10px}
 }@media only screen and (max-width:400px){.Header-Logo{-webkit-flex-basis:43px;-ms-flex-preferred-size:43px;flex-basis:43px;margin-left:15px;width:43px}
 .Header-Button{-webkit-border-radius:19px;border-radius:19px;height:38px;font-size:.9em;line-height:1em;padding:0 24px}
 .Header-MenuSwitch{margin-right:13px}.Title{background-position:50% -85px;height:614px}
@@ -61,8 +72,8 @@
 .GitHubStat-Number{font-size:10px;line-height:12px;padding:6px 7px}.GitHubStat-Button{font-size:12px;line-height:12px;padding:4px 12px}
 .Download{margin:-24px 0 68px 0}.Download-Button{-webkit-border-radius:23px;border-radius:23px;height:45px;font-size:1.075em;line-height:1em;padding:0 30px;margin-bottom:12px}
 .Download-IntroBlock{margin-bottom:7px;padding:56px 0 5px 0}.Download-IntroTitle{font-size:1.675em;line-height:1.5em;padding:.25em 0}
-.Download-IntroText{font-size:.875em;line-height:1.375em;padding:.25em 1rem}.About-Title{font-size:2em;line-height:1.125em;margin-bottom:4px;padding:1em}
-.About-Text{margin-bottom:57px}.About-Picture{margin-bottom:57px}.About-PictureImg{width:720px;margin-left:-30px}
+.Download-IntroText{font-size:.875em;line-height:1.375em;padding:.25em 1rem}.About-Title{font-size:2em;line-height:1.125em;margin-bottom:4px;padding:1em .25em}
+.About-Text{margin-bottom:57px}.About-Picture{margin-bottom:0}.About-PictureImg{width:720px;margin-left:-30px}
 .About-EntryBlock{margin-bottom:31px}.About-EntryBlockImage{margin-bottom:16px}.About-EntryBlockImageSvg_04{-webkit-transform:translateX(9px);-ms-transform:translateX(9px);transform:translateX(9px)}
 .About-EntryBlockTitle{margin-bottom:2px;padding:.5em 10px;text-align:center}.About-EntryBlockInfo{font-family:"Lato",sans-serif;padding:0 10px;text-align:center}
 }@media only screen and (min-width:401px) and (max-width:480px){.Header-Logo{margin-left:24px}
@@ -73,7 +84,7 @@
 .GitHubStat-Entry{margin:.65em .25em}.GitHubStat-Number{font-size:10px;line-height:12px;padding:6px 7px}
 .GitHubStat-Button{font-size:12px;line-height:12px;padding:4px 12px}.Download{margin:-32px 0 58px 0}
 .Download-IntroBlock{margin-bottom:5px;padding:54px 0 5px 0}.Download-IntroTitle{font-size:2.5em;letter-spacing:1.5px;line-height:1.25em;margin-bottom:19px;padding:.25em 0}
-.Download-IntroText{font-size:1em;line-height:1.575em;padding:.5em 0}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:9px;padding:1em}
+.Download-IntroText{font-size:1em;line-height:1.575em;padding:.5em 0}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:9px;padding:1em .25em}
 .About-Text{margin-bottom:0}.About-PictureImg{margin-left:-22px}.About-EntryBlock{margin-bottom:33px}
 .About-EntryBlockInfo{font-family:"Lato",sans-serif;text-align:left}
 }@media only screen and (min-width:481px) and (max-width:992px){.Header-Button{margin-right:20px}
@@ -85,7 +96,7 @@
 .GitHubStat-Number{font-size:10px;line-height:12px;padding:6px 7px}.GitHubStat-Button{font-size:12px;line-height:12px;padding:4px 12px}
 .Download{margin:-32px 0 79px 0}.Download-IntroBlock{margin-bottom:2px;padding:74px 0 5px 0}
 .Download-IntroTitle{font-size:2.5em;letter-spacing:1.5px;line-height:1.25em;margin-bottom:2px;padding:.25em 0}
-.Download-IntroText{font-size:1.25em;line-height:1.575em;padding:.5em .5rem}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:2px;padding:1em}
+.Download-IntroText{font-size:1.25em;line-height:1.575em;padding:.5em .5rem}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:2px;padding:1em .25em}
 .About-Text{margin-bottom:46px}.About-PictureImg{margin-left:-24px}.About-EntryBlock{margin-bottom:37px}
 .About-EntryBlockText{padding:0 26px 0 15px}.About-EntryBlockInfo{font-family:"Lato",sans-serif;font-size:1em;line-height:1.375em;text-align:left}
 }@media only screen and (min-width:401px) and (max-width:992px){.About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;width:150px}
