@@ -7,10 +7,25 @@
   align-items: center;
   margin:0 10px;
 
+  @include respond-to-screen(md) {
+    margin: 31px 32px 35px 32px;
+  }
+  @include respond-to-screen(lg) {
+    margin: 50px auto 69px auto;
+    max-width:970px;
+  }
+
   &-Entry {
     flex-basis: 200px;
     flex-grow: 1;
     position: relative;
+
+    @include respond-to-screen(md) {
+      margin:0 32px;
+    }
+    @include respond-to-screen(lg) {
+      margin:0 44px;
+    }
   }
 
   &-Arrow {

@@ -7,6 +7,13 @@ $color-feedback-card-link: #8d81ac !default;
 
   &-Author {
     margin-bottom: 8px;
+
+    @include respond-to-screen(md,lg) {
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 32px;
+    }
   }
   &-Avatar {
     border-radius: 50%;
@@ -14,6 +21,23 @@ $color-feedback-card-link: #8d81ac !default;
     width: 85px;
     height: 85px;
     overflow: hidden;
+
+    @include respond-to-screen(md,lg) {
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 85px;
+      margin: 0 22px 0 auto;
+    }
+  }
+  &-Title{
+    text-align: center;
+    margin:0;
+    @include respond-to-screen(md,lg) {
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 52.5%;
+      text-align: left;
+    }
   }
   &-Name {
     color: #474747;
@@ -21,13 +45,12 @@ $color-feedback-card-link: #8d81ac !default;
     line-height: 1.25em;
     padding: 0.25em 0;
     font-weight: 700;
-    text-align: center;
+
     margin: 0;
   }
   &-Nick {
     color: $color-feedback-card-link;
-    text-align: center;
-    margin: -5px auto 0 auto;
+    margin: -5px 0 0 0;
     display: block;
 
   }
@@ -40,11 +63,20 @@ $color-feedback-card-link: #8d81ac !default;
     & a{
       color: $color-feedback-card-link;
     }
+    @include respond-to-screen(md,lg) {
+      font-size:1.25em;
+      line-height:1.625em;
+      padding:0.5em 0;
+    }
   }
   &-Time {
     color:#848e97;
     margin-top:-6px;
     text-align: center;
     padding:0.5em 0;
+
+    @include respond-to-screen(md,lg) {
+      margin-top:2px;
+    }
   }
 }

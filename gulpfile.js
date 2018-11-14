@@ -42,12 +42,15 @@ lazyRequireTask('compile-css', './gulp-tasks/compile-css', {
 	baseDir:'src'
 });
 
-lazyRequireTask('img', './gulp-tasks/img', {
+lazyRequireTask('copy-img', './gulp-tasks/copy-img', {
 	src: 'src/img/**', 
 	dest:'dist/img'
 });
-
-lazyRequireTask('html', './gulp-tasks/html', {
+lazyRequireTask('copy-fonts', './gulp-tasks/copy-fonts', {
+    src: 'src/fonts/**',
+    dest:'dist/fonts'
+});
+lazyRequireTask('copy-html', './gulp-tasks/copy-html', {
 	src: 'src/**/*.html', 
 	dest:'dist'
 });
@@ -79,14 +82,15 @@ gulp.task('watch', function(){
 			//delete $.cached.chaches.jsCache[path.resolve(filepath)];
 		});
 
-	gulp.watch('src/img/**', gulp.series('img'));
-	gulp.watch('src/**/*.html', gulp.series('html'));
+	gulp.watch('src/img/**', gulp.series('copy-img'));
+	gulp.watch('src/**/*.html', gulp.series('copy-html'));
+    gulp.watch('src/fonts/**', gulp.series('copy-fonts'));
 });
 
 
 gulp.task('build', gulp.series(
 	'clean', 
-	gulp.parallel('html', 'compile-css', 'compile-js', 'img')
+	gulp.parallel('copy-html', 'compile-css', 'compile-js', 'copy-fonts', 'copy-img')
 	)
 );
 

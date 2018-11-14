@@ -1,0 +1,110 @@
+
+.SocialButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+
+  @include respond-to-screen(md) {
+    margin-bottom: 28px;
+  }
+
+  &-Container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 282px;
+    margin-bottom: 14px;
+
+    @include respond-to-screen(md,lg) {
+      flex-basis: 240px;
+      margin: 0 1.25em 18px 1.25em;
+    }
+
+  }
+  &-Button {
+    box-sizing: border-box;
+    border: 1px solid #f3f3f3;
+    outline: none;
+    font-family: $font-family-monserrat;
+    font-size: 1.25em;
+    width: 280px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    color: black;
+    line-height: 50px;
+    padding: 0 2em;
+    position: relative;
+    letter-spacing: 1px;
+    margin: 0.25em 0;
+
+    @include respond-to-screen(md,lg) {
+      width: 240px;
+    }
+
+    @mixin social-button-icon {
+      font-family: $font-awesome-brands;
+      position: absolute;
+      left: 25px;
+      top: 0;
+      font-size: 1.25rem;
+    }
+
+    &:hover {
+      background-color: #2b414d;
+      color: white;
+      border-color: #2b414d;
+    }
+
+    &_gitHub {
+
+      &::after {
+        content: '\f09b';
+        @include social-button-icon;
+      }
+    }
+    &_twitter {
+
+      background-color: #26a6d1;
+      color: white;
+      border-color: #26a6d1;
+
+      &:hover {
+        background-color: white;
+        color: #26a6d1;
+        border-color: #26a6d1;
+      }
+
+      &::after {
+        content: '\f099';
+        @include social-button-icon;
+      }
+
+    }
+    &_facebook {
+
+      background-color: #3b5998;
+      color: white;
+      border-color: #3b5998;
+
+      &:hover {
+        background-color: white;
+        color: #3b5998;
+        border-color: #3b5998;
+      }
+
+      &::after {
+        content: '\f39e';
+        @include social-button-icon;
+      }
+    }
+  }
+  &-ButtonStat {
+    font-family: $font-family-monserrat;
+    color: #848e97;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.5em;
+  }
+}
