@@ -19,4 +19,8 @@ File structure
 - \BlockName
     - \_modificatorName
     - \-ElementName
+<<<<<<< HEAD
         - \_modificatorName
+=======
+        - \_modificatorName
+>>>>>>> f30b32c18cd7fa0abb7ebf03cc679eb1a4f27b2f
