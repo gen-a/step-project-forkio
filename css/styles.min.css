@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:600i");.Button{background-color:#8d81ac;-webkit-border-radius:20px;border-radius:20px;border:1px solid #8d81ac;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;cursor:pointer;font-family:"Montserrat",sans-serif;font-size:16px;font-weight:700;height:40px;outline:0;padding:0 35px;-webkit-transition:.2s color;-o-transition:.2s color;transition:.2s color;white-space:nowrap}
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:600i");@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;src:url("../fonts/fa-brands-400.eot");src:url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("../fonts/fa-brands-400.woff2") format("woff2"),url("../fonts/fa-brands-400.woff") format("woff"),url("../fonts/fa-brands-400.ttf") format("truetype"),url("../fonts/fa-brands-400.svg#fontawesome") format("svg")}
+.Button{background-color:#8d81ac;-webkit-border-radius:20px;border-radius:20px;border:1px solid #8d81ac;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;cursor:pointer;font-family:"Montserrat",sans-serif;font-size:16px;font-weight:700;height:40px;outline:0;padding:0 35px;-webkit-transition:.2s color;-o-transition:.2s color;transition:.2s color;white-space:nowrap}
 .Button:hover{background-color:white;color:#8d81ac}.Section{overflow:hidden}.Section_background_lightest{background-color:white}
 .Section_background_light{background-color:#f4f4f4}.Section_background_medium{background-color:#777}
 .Section_background_dark{background-color:#27262a}.Section_background_darkest{background-color:#000}
@@ -30,21 +31,37 @@
 .About-EntryBlockImage img{display:block;margin:0 auto}.About-EntryBlockText{-webkit-box-sizing:border-box;box-sizing:border-box}
 .About-EntryBlockTitle{color:#323232;font-size:1.025em;line-height:1.375em}.About-EntryBlockInfo{color:#848e97;font-size:.875em;line-height:1.5em;text-align:center}
 .Carousel-Screen{overflow:hidden}.Carousel-Items{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);transition:transform .6s ease,-webkit-transform .6s ease}
-.Carousel-Item{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;width:100%;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0}
+.Carousel-Item{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:100%}
 .Feedback{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin:0 10px}
 .Feedback-Entry{-webkit-flex-basis:200px;-ms-flex-preferred-size:200px;flex-basis:200px;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;position:relative}
 .Feedback-Arrow{display:block;-webkit-flex-basis:30px;-ms-flex-preferred-size:30px;flex-basis:30px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;width:30px;height:30px}
 .FeedbackCard{width:100%;margin:0;padding:2em 0}.FeedbackCard-Author{margin-bottom:8px}
 .FeedbackCard-Avatar{-webkit-border-radius:50%;border-radius:50%;margin:0 auto 13px auto;width:85px;height:85px;overflow:hidden}
-.FeedbackCard-Name{color:#474747;font-size:1.5em;line-height:1.25em;padding:.25em 0;font-weight:700;text-align:center;margin:0}
-.FeedbackCard-Nick{color:#8d81ac;text-align:center;margin:-5px auto 0 auto;display:block}
-.FeedbackCard-Text{font-family:"Lato",sans-serif;line-height:1.5em;text-align:center;padding:.5em 0;margin:0}
+.FeedbackCard-Title{text-align:center;margin:0}.FeedbackCard-Name{color:#474747;font-size:1.5em;line-height:1.25em;padding:.25em 0;font-weight:700;margin:0}
+.FeedbackCard-Nick{color:#8d81ac;margin:-5px 0 0 0;display:block}.FeedbackCard-Text{font-family:"Lato",sans-serif;line-height:1.5em;text-align:center;padding:.5em 0;margin:0}
 .FeedbackCard-Text a{color:#8d81ac}.FeedbackCard-Time{color:#848e97;margin-top:-6px;text-align:center;padding:.5em 0}
+.SocialButtons{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:32px}
+.SocialButtons-Container{-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-flex-basis:282px;-ms-flex-preferred-size:282px;flex-basis:282px;margin-bottom:14px}
+.SocialButtons-Button{-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #f3f3f3;outline:0;font-family:"Montserrat",sans-serif;font-size:1.25em;width:280px;height:52px;-webkit-border-radius:4px;border-radius:4px;background-color:#f3f3f3;color:black;line-height:50px;padding:0 2em;position:relative;letter-spacing:1px;margin:.25em 0}
+.SocialButtons-Button:hover{background-color:#2b414d;color:white;border-color:#2b414d}
+.SocialButtons-Button_gitHub::after{content:'\f09b';font-family:"Font Awesome 5 Brands";position:absolute;left:25px;top:0;font-size:1.25rem}
+.SocialButtons-Button_twitter{background-color:#26a6d1;color:white;border-color:#26a6d1}
+.SocialButtons-Button_twitter:hover{background-color:white;color:#26a6d1;border-color:#26a6d1}
+.SocialButtons-Button_twitter::after{content:'\f099';font-family:"Font Awesome 5 Brands";position:absolute;left:25px;top:0;font-size:1.25rem}
+.SocialButtons-Button_facebook{background-color:#3b5998;color:white;border-color:#3b5998}
+.SocialButtons-Button_facebook:hover{background-color:white;color:#3b5998;border-color:#3b5998}
+.SocialButtons-Button_facebook::after{content:'\f39e';font-family:"Font Awesome 5 Brands";position:absolute;left:25px;top:0;font-size:1.25rem}
+.SocialButtons-ButtonStat{font-family:"Montserrat",sans-serif;color:#848e97;padding:.5em 0;text-align:center;font-size:.875em;line-height:1.5em}
 .Page{background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
 @media only screen and (min-width:401px){.Download-Button{margin-bottom:18px}.About-EntryBlock{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:14px 0}
 }@media only screen and (min-width:481px){.Header-Logo{margin-left:20px}.Header-MenuSwitch{display:none}
-}@media only screen and (min-width:993px){.Header-Button{-webkit-box-ordinal-group:4;-webkit-order:3;-ms-flex-order:3;order:3;margin-right:20px}
+.FeedbackCard-Author{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-bottom:32px}
+.FeedbackCard-Avatar{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-basis:85px;-ms-flex-preferred-size:85px;flex-basis:85px;margin:0 22px 0 auto}
+.FeedbackCard-Title{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-basis:52.5%;-ms-flex-preferred-size:52.5%;flex-basis:52.5%;text-align:left}
+.FeedbackCard-Text{font-size:1.25em;line-height:1.625em;padding:.5em 0}.FeedbackCard-Time{margin-top:2px}
+.SocialButtons-Container{-webkit-flex-basis:240px;-ms-flex-preferred-size:240px;flex-basis:240px;margin:0 1.25em 18px 1.25em}
+.SocialButtons-Button{width:240px}}@media only screen and (min-width:993px){.Header-Button{-webkit-box-ordinal-group:4;-webkit-order:3;-ms-flex-order:3;order:3;margin-right:20px}
 .Header-Navigation{-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;text-align:right}
 .Header-NavigationEntry{font-weight:700;padding:0 20px}.Header{min-height:100px;padding-top:30px;position:-webkit-sticky;position:sticky;z-index:1}
 .Title{background-position:50% -45px;height:700px}.Title-Text{height:279px;padding:32px 20px 0 20px}
@@ -59,6 +76,7 @@
 .About-PictureImg{margin:-26px 0 0 -28px}.About-EntryBlock{margin-bottom:37px}.About-EntryBlockImage{-webkit-flex-basis:100px;-ms-flex-preferred-size:100px;flex-basis:100px;width:100px}
 .About-EntryBlockText{-webkit-box-sizing:content-box;box-sizing:content-box;padding:0 26px 0 35px;max-width:380px}
 .About-EntryBlockTitle{padding:.5em 0;text-align:left}.About-EntryBlockInfo{font-size:.875em;line-height:1.6em;text-align:left}
+.Feedback{margin:50px auto 69px auto;max-width:970px}.Feedback-Entry{margin:0 44px}
 }@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:2}
 .Header-Navigation_isActive{opacity:1}.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
 .Header-NavigationEntry_isCurrent{color:#8d81ac}.Header-NavigationEntry_isCurrent:after{background:#8d81ac;content:'';height:54px;left:0;position:absolute;top:22px;width:4px}
@@ -99,6 +117,7 @@
 .Download-IntroText{font-size:1.25em;line-height:1.575em;padding:.5em .5rem}.About-Title{font-size:2.75em;letter-spacing:-0.5px;line-height:1.175em;margin-bottom:2px;padding:1em .25em}
 .About-Text{margin-bottom:46px}.About-PictureImg{margin-left:-24px}.About-EntryBlock{margin-bottom:37px}
 .About-EntryBlockText{padding:0 26px 0 15px}.About-EntryBlockInfo{font-family:"Lato",sans-serif;font-size:1em;line-height:1.375em;text-align:left}
+.Feedback{margin:31px 32px 35px 32px}.Feedback-Entry{margin:0 32px}.SocialButtons{margin-bottom:28px}
 }@media only screen and (min-width:401px) and (max-width:992px){.About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;width:150px}
 .About-EntryBlockTitle{padding:.5em 0;text-align:left}}
 /*# sourceMappingURL=styles.min.css.map */
