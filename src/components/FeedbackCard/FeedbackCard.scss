@@ -1,65 +1,72 @@
 $color-feedback-card-link: #8d81ac !default;
 
 .FeedbackCard {
-  width:100%;
+
   margin:0;
   padding:2em 0;
+  width:100%;
 
   &-Author {
     margin-bottom: 8px;
 
     @include respond-to-screen(md,lg) {
+      align-items: center;
       display:flex;
       justify-content: flex-end;
-      align-items: center;
       margin-bottom: 32px;
     }
   }
   &-Avatar {
     border-radius: 50%;
-    margin: 0 auto 13px auto;
-    width: 85px;
     height: 85px;
+    margin: 0 auto 13px auto;
     overflow: hidden;
+    width: 85px;
 
     @include respond-to-screen(md,lg) {
-      flex-shrink: 0;
-      flex-grow: 0;
       flex-basis: 85px;
+      flex-grow: 0;
+      flex-shrink: 0;
       margin: 0 22px 0 auto;
     }
   }
   &-Title{
-    text-align: center;
+
     margin:0;
+    text-align: center;
+
     @include respond-to-screen(md,lg) {
-      flex-shrink: 0;
-      flex-grow: 0;
       flex-basis: 52.5%;
+      flex-grow: 0;
+      flex-shrink: 0;
       text-align: left;
     }
   }
   &-Name {
     color: #474747;
     font-size: 1.5em;
-    line-height: 1.25em;
-    padding: 0.25em 0;
     font-weight: 700;
-
+    line-height: 1.25em;
     margin: 0;
+    padding: 0.25em 0;
+
+
+
   }
   &-Nick {
     color: $color-feedback-card-link;
-    margin: -5px 0 0 0;
     display: block;
+    margin: -5px 0 0 0;
+
 
   }
   &-Text {
     font-family:$font-family-lato;
     line-height:1.5em;
-    text-align: center;
-    padding:0.5em 0;
     margin:0;
+    padding:0.5em 0;
+    text-align: center;
+
     & a{
       color: $color-feedback-card-link;
     }
@@ -72,8 +79,9 @@ $color-feedback-card-link: #8d81ac !default;
   &-Time {
     color:#848e97;
     margin-top:-6px;
-    text-align: center;
     padding:0.5em 0;
+    text-align: center;
+
 
     @include respond-to-screen(md,lg) {
       margin-top:2px;

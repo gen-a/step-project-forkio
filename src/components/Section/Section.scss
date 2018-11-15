@@ -22,6 +22,9 @@ $color-background-section-darkest: #000000 !default;
 	&_background_darkest{
 		background-color: $color-background-section-darkest;
 	}
+	&_background_violet{
+		background-color: #4b3b4e;
+	}
 	&_position_sticky{
 		position:sticky;
 		top: 0;

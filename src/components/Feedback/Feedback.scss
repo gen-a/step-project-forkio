@@ -2,9 +2,9 @@
 
 .Feedback {
 
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin:0 10px;
 
   @include respond-to-screen(md) {
@@ -29,10 +29,11 @@
   }
 
   &-Arrow {
+    cursor:pointer;
     display:block;
     flex-basis: 30px;
-    flex-shrink: 0;
     flex-grow: 0;
+    flex-shrink: 0;
     width: 30px;
     height: 30px;
 

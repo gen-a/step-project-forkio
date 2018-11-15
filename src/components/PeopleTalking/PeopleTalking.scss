@@ -1,0 +1,146 @@
+.PeopleTalking {
+  background: #4b3b4e url(../img/people-talking-background.jpg) 50% 0 no-repeat;
+  padding-top: 44px;
+
+  @include respond-to-screen(sm) {
+    padding-top: 55px;
+  }
+  @include respond-to-screen(lg) {
+    padding-top: 58px;
+  }
+
+  &-Title {
+    color: white;
+    font-family: $font-family-monserrat;
+    font-size: 2.175em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.375em;
+    margin-bottom: 29px;
+    padding: 0.25em 0;
+    text-align: center;
+
+    @include respond-to-screen(sm) {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      margin-bottom: 74px;
+      padding: 0.25em 0;
+    }
+    @include respond-to-screen(md) {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      margin-bottom: 57px;
+      padding: 0.5em 0;
+    }
+    @include respond-to-screen(lg) {
+      font-size: 2.875em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      margin-bottom: 57px;
+      padding: 0.5em 0;
+
+    }
+  }
+  &-Container {
+
+    margin-bottom: 20px;
+    padding: 0 1em;
+
+    @include respond-to-screen(sm) {
+      margin-bottom: 60px;
+    }
+    @include respond-to-screen(md,lg) {
+      align-items:stretch;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include respond-to-screen(md) {
+      margin-bottom: 4px;
+    }
+    @include respond-to-screen(lg) {
+      margin-bottom: 33px;
+    }
+  }
+  &-Card {
+    margin-bottom: 22px;
+
+    @include respond-to-screen(md,lg) {
+      flex-basis: 300px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0 auto 36px auto;
+      width:300px;
+    }
+
+    @include respond-to-screen(lg) {
+      margin-bottom: 63px;
+    }
+  }
+
+  &-CardLogo {
+
+    @include respond-to-screen(xs, sm) {
+      margin-bottom: 15px;
+    }
+
+    @include respond-to-screen(md, lg) {
+      height: 64px;
+      margin-bottom: 5px;
+      position: relative;
+    }
+
+    & img {
+      display: block;
+      @include respond-to-screen(xs, sm) {
+        margin: 0 auto;
+      }
+      @include respond-to-screen(md, lg) {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+  }
+  &-CardText {
+    color: white;
+    font-family: $font-family-lato;
+    font-size: .925em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.625em;
+    padding: 1em 0;
+    text-align: center;
+
+  }
+  &-Notice {
+    margin:0 auto 0 auto;
+    max-width:860px;
+    padding: 0 30px;
+
+    &Text{
+      box-sizing: border-box;
+      color:#a291a5;
+      font-family: $font-family-lato;
+      font-size:0.825em;
+      line-height:1.6em;
+      margin-bottom: 14px;
+      text-align:center;
+
+      @include respond-to-screen(xs, sm) {
+        display:none;
+      }
+    }
+    &Separator{
+      background-color:#645766;
+      border:0;
+      box-sizing: border-box;
+      display:block;
+      height:2px;
+      margin-bottom:1em;
+    }
+  }
+}
