@@ -11,15 +11,16 @@ $color-header-navigator: #8d81ac !default;
     order: 4;
     position: relative;
     text-align: left;
-    transition: opacity 0.2s;
+   transition: opacity 0.2s;
     width: 100%;
-    z-index: 2;
-  }
-  &_isActive {
-    @include respond-to-screen(xs, sm) {
-      opacity: 1;
+    z-index: 44;
+
+    &_isActive {
+        opacity: 1 !important;
     }
+
   }
+
   @include respond-to-screen(md) {
     flex-grow: 1;
     padding:11px 0;
@@ -31,6 +32,7 @@ $color-header-navigator: #8d81ac !default;
     order: 2;
     text-align: right;
   }
+
 }
 
 .Header-NavigationEntry {

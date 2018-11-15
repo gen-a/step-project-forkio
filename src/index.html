@@ -433,33 +433,5 @@
     </div>
 </div>
 <script src="js/app.min.js"></script>
-<script>
-
-
-    let addClass = function (elements, className) {
-        elements.forEach(element => element.classList.add(className));
-    };
-    let removeClass = function (elements, className) {
-        elements.forEach(element => element.classList.remove(className));
-    };
-
-    document.querySelector('.Header-MenuSwitch').addEventListener("click", function (e) {
-        e.preventDefault();
-
-        let navActiveClass = "Header-Navigation_isActive",
-            classList = document.querySelectorAll(".Header-Navigation")[0].classList;
-
-        if (classList.contains(navActiveClass)) {
-            removeClass(document.querySelectorAll(".MenuSwitch"), "MenuSwitch_isOpen");
-            classList.remove(navActiveClass);
-        } else {
-            addClass(document.querySelectorAll(".MenuSwitch"), "MenuSwitch_isOpen");
-            classList.add(navActiveClass);
-        }
-        return false;
-    });
-
-
-</script>
 </body>
 </html>

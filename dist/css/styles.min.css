@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:600i");@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;src:url("../fonts/fa-brands-400.eot");src:url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("../fonts/fa-brands-400.woff2") format("woff2"),url("../fonts/fa-brands-400.woff") format("woff"),url("../fonts/fa-brands-400.ttf") format("truetype"),url("../fonts/fa-brands-400.svg#fontawesome") format("svg")}
 .Button{background-color:#8d81ac;-webkit-border-radius:20px;border-radius:20px;border:1px solid #8d81ac;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;cursor:pointer;font-family:"Montserrat",sans-serif;font-size:16px;font-weight:700;height:40px;outline:0;padding:0 35px;-webkit-transition:.2s color;-o-transition:.2s color;transition:.2s color;white-space:nowrap}
-.Button:hover{background-color:white;color:#8d81ac}.Section{overflow:hidden}.Section_background_lightest{background-color:white}
+.Button:hover{background-color:white;color:#8d81ac}.Section_background_lightest{background-color:white}
 .Section_background_light{background-color:#f4f4f4}.Section_background_medium{background-color:#777}
 .Section_background_dark{background-color:#27262a}.Section_background_darkest{background-color:#000}
 .Section_background_violet{background-color:#4b3b4e}.Section_position_sticky{position:-webkit-sticky;position:sticky;top:0;z-index:1}
@@ -58,7 +58,7 @@
 .PeopleTalking-CardLogo img{display:block}.PeopleTalking-CardText{color:white;font-family:"Lato",sans-serif;font-size:.925em;font-style:italic;font-weight:bold;line-height:1.625em;padding:1em 0;text-align:center}
 .PeopleTalking-Notice{margin:0 auto 0 auto;max-width:860px;padding:0 30px}.PeopleTalking-NoticeText{-webkit-box-sizing:border-box;box-sizing:border-box;color:#a291a5;font-family:"Lato",sans-serif;font-size:.825em;line-height:1.6em;margin-bottom:14px;text-align:center}
 .PeopleTalking-NoticeSeparator{background-color:#645766;border:0;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;height:2px;margin-bottom:1em}
-.Page{background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
+.Page{overflow:hidden;background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
 @media only screen and (min-width:401px){.Download-Button{margin-bottom:18px}.About-EntryBlock{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:14px 0}
 }@media only screen and (min-width:481px){.Header-Logo{margin-left:20px}.Header-MenuSwitch{display:none}
@@ -88,8 +88,8 @@
 .Feedback{margin:50px auto 69px auto;max-width:970px}.Feedback-Entry{margin:0 44px}
 .SocialButtons{margin-bottom:49px}.PeopleTalking{padding-top:58px}.PeopleTalking-Title{font-size:2.875em;letter-spacing:1px;line-height:1.5em;margin-bottom:57px;padding:.5em 0}
 .PeopleTalking-Container{margin-bottom:33px}.PeopleTalking-Card{margin-bottom:63px}
-}@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:2}
-.Header-Navigation_isActive{opacity:1}.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
+}@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:44}
+.Header-Navigation_isActive{opacity:1 !important}.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
 .Header-NavigationEntry_isCurrent{color:#8d81ac}.Header-NavigationEntry_isCurrent:after{background:#8d81ac;content:'';height:54px;left:0;position:absolute;top:22px;width:4px}
 .Header{height:105px;padding-top:32px}.About-EntryBlockText{padding:0 10px 0 10px}
 .PeopleTalking-CardLogo{margin-bottom:15px}.PeopleTalking-CardLogo img{margin:0 auto}
