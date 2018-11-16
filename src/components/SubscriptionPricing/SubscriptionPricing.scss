@@ -1,0 +1,216 @@
+.SubscriptionPricing {
+
+  background: #4b3b4e url(../img/subscription-pricing-background.jpg) 50% 50% no-repeat;
+  padding-bottom: 93px;
+  padding-top: 41px;
+
+  @include respond-to-screen(sm) {
+    padding-bottom: 96px;
+    padding-top: 55px;
+  }
+  @include respond-to-screen(md) {
+    padding-bottom: 101px;
+    padding-top: 46px;
+  }
+  @include respond-to-screen(lg) {
+    padding-bottom: 91px;
+    padding-top: 39px;
+  }
+
+  &-Title {
+    color: white;
+    font-family: $font-family-monserrat;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    margin-bottom: 33px;
+    padding: 0.25em 0;
+    text-align: center;
+
+    @include respond-to-screen(sm) {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      margin-bottom: 34px;
+      padding: 0.25em 0;
+    }
+    @include respond-to-screen(md) {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      margin-bottom: 14px;
+      padding: 0.5em 0;
+    }
+    @include respond-to-screen(lg) {
+      font-size: 2.875em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      margin-bottom: 33px;
+      padding: 0.5em 0;
+
+    }
+  }
+  &-Container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  &-Card {
+
+    background: rgba(255, 255, 255, 0.11);
+    box-sizing: border-box;
+    flex-basis: 258px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height:458px;
+    margin: 7px 20px;
+    position: relative;
+
+    @include respond-to-screen(lg) {
+      margin: 7px 7px;
+    }
+
+    @mixin card-children-position{
+      position:absolute;
+      left:50%;
+      transform: translateX(-50%);
+    }
+
+    &Title {
+      background: rgba(255, 255, 255, 0.11);
+      box-sizing: border-box;
+      color: white;
+      font-size: 1.5em;
+      height: 97px;
+      left:0;
+      line-height: 1em;
+      padding: 42px 0 0 0;
+      position:absolute;
+      right:0;
+      text-transform: uppercase;
+      text-align: center;
+      top:0;
+    }
+    &Price {
+      @include card-children-position;
+
+      color: white;
+      font-size: 3.75em;
+      line-height: 1em;
+      text-align: center;
+      padding: 0.5em 0;
+      top:97px;
+
+      &Number {
+        font-weight: 700;
+      }
+    }
+    &Period {
+      @include card-children-position;
+
+      color: white;
+      font-size: 0.875em;
+      line-height: 1em;
+      opacity: 0.3;
+      text-align: center;
+      text-transform: uppercase;
+      top:208px;
+
+    }
+    &Separator {
+      @include card-children-position;
+
+      width: 60px;
+      height: 5px;
+      background-color: #8d81ac;
+      top:260px;
+    }
+    &Licence {
+      @include card-children-position;
+
+      color: white;
+      text-align: center;
+      font-size: 1em;
+      line-height: 1.75em;
+      right:0;
+      top:290px;
+      width:100%;
+
+    }
+    &Button {
+      @include card-children-position;
+
+      background:rgba(255,255,255,0.15);
+      box-sizing: border-box;
+      border: none;
+      border-radius: 21px;
+      color: white;
+      display: block;
+      font-family: $font-family-monserrat;
+      font-size: 1em;
+      height: 42px;
+      line-height: 1em;
+      outline: none;
+      width: 160px;
+      text-transform: uppercase;
+      text-align: center;
+      top: 377px;
+
+      &:hover{
+        background:rgba(255,255,255,1);
+        font-weight:700;
+        color:#7f6d78;
+      }
+    }
+    &_isFeatured{
+
+      background:rgba(0,0,0,0.15);
+      height:560px;
+
+      @include respond-to-screen(sm,md,lg) {
+        flex-basis: 300px;
+      }
+
+      @include respond-to-screen(md) {
+        margin:7px 0;
+      }
+      @include respond-to-screen(lg) {
+        margin: 7px 7px;
+      }
+
+      & .SubscriptionPricing-Card{
+
+        &Title{
+          background:rgba(0,0,0,0.11);
+          height: 110px;
+          padding: 47px 0 0 0;
+        }
+        &Price {
+          font-size: 5.25em;
+          top: 79px;
+        }
+        &Period {
+          font-size: 1em;
+          letter-spacing: -1.5px;
+          top: 220px;
+        }
+        &Separator {
+          top: 282px;
+        }
+        &Licence {
+          top: 319px;
+          line-height:2em;
+        }
+        &Button {
+          border-radius:26px;
+          width:190px;
+          height:52px;
+          top: 459px;
+        }
+      }
+    }
+  }
+}

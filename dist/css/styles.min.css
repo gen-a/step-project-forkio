@@ -57,10 +57,28 @@
 .PeopleTalking-Container{margin-bottom:20px;padding:0 1em}.PeopleTalking-Card{margin-bottom:22px}
 .PeopleTalking-CardLogo img{display:block}.PeopleTalking-CardText{color:white;font-family:"Lato",sans-serif;font-size:.925em;font-style:italic;font-weight:bold;line-height:1.625em;padding:1em 0;text-align:center}
 .PeopleTalking-Notice{margin:0 auto 0 auto;max-width:860px;padding:0 30px}.PeopleTalking-NoticeText{-webkit-box-sizing:border-box;box-sizing:border-box;color:#a291a5;font-family:"Lato",sans-serif;font-size:.825em;line-height:1.6em;margin-bottom:14px;text-align:center}
-.PeopleTalking-NoticeSeparator{background-color:#645766;border:0;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;height:2px;margin-bottom:1em}
+.PeopleTalking-NoticeSeparator{background-color:#645766;border:0;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;height:2px;margin:0}
+.SubscriptionPricing{background:#4b3b4e url(../img/subscription-pricing-background.jpg) 50% 50% no-repeat;padding-bottom:93px;padding-top:41px}
+.SubscriptionPricing-Title{color:white;font-family:"Montserrat",sans-serif;font-size:1.7em;font-weight:bold;letter-spacing:0;line-height:1.5em;margin-bottom:33px;padding:.25em 0;text-align:center}
+.SubscriptionPricing-Container{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.SubscriptionPricing-Card{background:rgba(255,255,255,0.11);-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-flex-basis:258px;-ms-flex-preferred-size:258px;flex-basis:258px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;height:458px;margin:7px 20px;position:relative}
+.SubscriptionPricing-CardTitle{background:rgba(255,255,255,0.11);-webkit-box-sizing:border-box;box-sizing:border-box;color:white;font-size:1.5em;height:97px;left:0;line-height:1em;padding:42px 0 0 0;position:absolute;right:0;text-transform:uppercase;text-align:center;top:0}
+.SubscriptionPricing-CardPrice{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);color:white;font-size:3.75em;line-height:1em;text-align:center;padding:.5em 0;top:97px}
+.SubscriptionPricing-CardPriceNumber{font-weight:700}.SubscriptionPricing-CardPeriod{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);color:white;font-size:.875em;line-height:1em;opacity:.3;text-align:center;text-transform:uppercase;top:208px}
+.SubscriptionPricing-CardSeparator{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width:60px;height:5px;background-color:#8d81ac;top:260px}
+.SubscriptionPricing-CardLicence{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);color:white;text-align:center;font-size:1em;line-height:1.75em;right:0;top:290px;width:100%}
+.SubscriptionPricing-CardButton{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);background:rgba(255,255,255,0.15);-webkit-box-sizing:border-box;box-sizing:border-box;border:0;-webkit-border-radius:21px;border-radius:21px;color:white;display:block;font-family:"Montserrat",sans-serif;font-size:1em;height:42px;line-height:1em;outline:0;width:160px;text-transform:uppercase;text-align:center;top:377px}
+.SubscriptionPricing-CardButton:hover{background:white;font-weight:700;color:#7f6d78}
+.SubscriptionPricing-Card_isFeatured{background:rgba(0,0,0,0.15);height:560px}.SubscriptionPricing-Card_isFeatured .SubscriptionPricing-CardTitle{background:rgba(0,0,0,0.11);height:110px;padding:47px 0 0 0}
+.SubscriptionPricing-Card_isFeatured .SubscriptionPricing-CardPrice{font-size:5.25em;top:79px}
+.SubscriptionPricing-Card_isFeatured .SubscriptionPricing-CardPeriod{font-size:1em;letter-spacing:-1.5px;top:220px}
+.SubscriptionPricing-Card_isFeatured .SubscriptionPricing-CardSeparator{top:282px}
+.SubscriptionPricing-Card_isFeatured .SubscriptionPricing-CardLicence{top:319px;line-height:2em}
+.SubscriptionPricing-Card_isFeatured .SubscriptionPricing-CardButton{-webkit-border-radius:26px;border-radius:26px;width:190px;height:52px;top:459px}
 .Page{overflow:hidden;background:white}.App{color:#777;background:#dedede;font-size:1em;line-height:1.375em;padding:0;margin:0;font-family:"Montserrat",sans-serif}
 @media only screen and (min-width:401px){.Download-Button{margin-bottom:18px}.About-EntryBlock{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:14px 0}
+.SubscriptionPricing-Card_isFeatured{-webkit-flex-basis:300px;-ms-flex-preferred-size:300px;flex-basis:300px}
 }@media only screen and (min-width:481px){.Header-Logo{margin-left:20px}.Header-MenuSwitch{display:none}
 .FeedbackCard-Author{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;margin-bottom:32px}
 .FeedbackCard-Avatar{-webkit-flex-basis:85px;-ms-flex-preferred-size:85px;flex-basis:85px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;margin:0 22px 0 auto}
@@ -88,6 +106,8 @@
 .Feedback{margin:50px auto 69px auto;max-width:970px}.Feedback-Entry{margin:0 44px}
 .SocialButtons{margin-bottom:49px}.PeopleTalking{padding-top:58px}.PeopleTalking-Title{font-size:2.875em;letter-spacing:1px;line-height:1.5em;margin-bottom:57px;padding:.5em 0}
 .PeopleTalking-Container{margin-bottom:33px}.PeopleTalking-Card{margin-bottom:63px}
+.SubscriptionPricing{padding-bottom:91px;padding-top:39px}.SubscriptionPricing-Title{font-size:2.875em;letter-spacing:1px;line-height:1.5em;margin-bottom:33px;padding:.5em 0}
+.SubscriptionPricing-Card{margin:7px 7px}.SubscriptionPricing-Card_isFeatured{margin:7px 7px}
 }@media only screen and (max-width:480px){.Header-Navigation{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:31px;opacity:0;-webkit-box-ordinal-group:5;-webkit-order:4;-ms-flex-order:4;order:4;position:relative;text-align:left;-webkit-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s;width:100%;z-index:44}
 .Header-Navigation_isActive{opacity:1 !important}.Header-NavigationEntry{background:#333;border-bottom:2px solid #3b3b3b;-webkit-box-sizing:border-box;box-sizing:border-box;color:white;display:block;font-size:2em;line-height:1.5em;padding:26px 0 30px 32px;width:100%}
 .Header-NavigationEntry_isCurrent{color:#8d81ac}.Header-NavigationEntry_isCurrent:after{background:#8d81ac;content:'';height:54px;left:0;position:absolute;top:22px;width:4px}
@@ -118,7 +138,9 @@
 .About-Text{margin-bottom:0}.About-PictureImg{margin-left:-22px}.About-EntryBlock{margin-bottom:33px}
 .About-EntryBlockInfo{font-family:"Lato",sans-serif;text-align:left}
 .PeopleTalking{padding-top:55px}.PeopleTalking-Title{font-size:2.5em;letter-spacing:1px;line-height:1.5em;margin-bottom:74px;padding:.25em 0}
-.PeopleTalking-Container{margin-bottom:60px}}@media only screen and (min-width:481px) and (max-width:992px){.Header-Button{margin-right:20px}
+.PeopleTalking-Container{margin-bottom:60px}.SubscriptionPricing{padding-bottom:96px;padding-top:55px}
+.SubscriptionPricing-Title{font-size:2.5em;letter-spacing:1px;line-height:1.5em;margin-bottom:34px;padding:.25em 0}
+}@media only screen and (min-width:481px) and (max-width:992px){.Header-Button{margin-right:20px}
 .Header-Navigation{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding:11px 0;-webkit-box-ordinal-group:4;-webkit-order:3;-ms-flex-order:3;order:3;text-align:center}
 .Header-NavigationEntry{font-weight:700;padding:0 23px}.Header{min-height:120px;padding-top:22px;position:-webkit-sticky;position:sticky}
 .Title{background-position:50% -63px;height:682px}.Title-Text{height:261px;padding:23px 20px 0 20px}
@@ -132,6 +154,8 @@
 .About-EntryBlockText{padding:0 26px 0 15px}.About-EntryBlockInfo{font-family:"Lato",sans-serif;font-size:1em;line-height:1.375em;text-align:left}
 .Feedback{margin:31px 32px 35px 32px}.Feedback-Entry{margin:0 32px}.SocialButtons{margin-bottom:28px}
 .PeopleTalking-Title{font-size:2.5em;letter-spacing:1px;line-height:1.5em;margin-bottom:57px;padding:.5em 0}
-.PeopleTalking-Container{margin-bottom:4px}}@media only screen and (min-width:401px) and (max-width:992px){.About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;width:150px}
+.PeopleTalking-Container{margin-bottom:4px}.SubscriptionPricing{padding-bottom:101px;padding-top:46px}
+.SubscriptionPricing-Title{font-size:2.5em;letter-spacing:1px;line-height:1.5em;margin-bottom:14px;padding:.5em 0}
+.SubscriptionPricing-Card_isFeatured{margin:7px 0}}@media only screen and (min-width:401px) and (max-width:992px){.About-EntryBlockImage{-webkit-flex-basis:150px;-ms-flex-preferred-size:150px;flex-basis:150px;width:150px}
 .About-EntryBlockTitle{padding:.5em 0;text-align:left}}
 /*# sourceMappingURL=styles.min.css.map */
