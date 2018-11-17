@@ -68,11 +68,8 @@
     margin-bottom: 22px;
 
     @include respond-to-screen(md,lg) {
-      flex-basis: 300px;
-      flex-grow: 0;
-      flex-shrink: 0;
+      flex: 0 0 300px;
       margin: 0 auto 36px auto;
-      width:300px;
     }
 
     @include respond-to-screen(lg) {

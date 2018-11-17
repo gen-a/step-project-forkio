@@ -1,15 +1,17 @@
 @import './-ContentContainer/Page-ContentContainer',
-		'../Header/Header',
-		'../Title/Title',
-		'../Download/Download',
-		'../About/About',
-		'../Feedback/Feedback',
-		'../FeedbackCard/FeedbackCard',
-		'../SocialButtons/SocialButtons',
-		'../PeopleTalking/PeopleTalking',
-        '../SubscriptionPricing/SubscriptionPricing';
+'../Header/Header',
+'../Title/Title',
+'../Download/Download',
+'../About/About',
+'../Feedback/Feedback',
+'../FeedbackCard/FeedbackCard',
+'../SocialButtons/SocialButtons',
+'../PeopleTalking/PeopleTalking',
+'../SubscriptionPricing/SubscriptionPricing',
+'../Subscribe/Subscribe',
+'../Footer/Footer';
 
-.Page{
-	overflow: hidden;
-	background:white;
+.Page {
+  overflow: hidden;
+  background: white;
 }

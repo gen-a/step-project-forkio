@@ -1,20 +1,16 @@
 .SubscriptionPricing {
 
   background: #4b3b4e url(../img/subscription-pricing-background.jpg) 50% 50% no-repeat;
-  padding-bottom: 93px;
-  padding-top: 41px;
+  padding: 41px 0 93px 0;
 
   @include respond-to-screen(sm) {
-    padding-bottom: 96px;
-    padding-top: 55px;
+    padding: 55px 0 96px 0;
   }
   @include respond-to-screen(md) {
-    padding-bottom: 101px;
-    padding-top: 46px;
+    padding: 46px 0 46px 0;
   }
   @include respond-to-screen(lg) {
-    padding-bottom: 91px;
-    padding-top: 39px;
+    padding: 39px 0 91px 0;
   }
 
   &-Title {
@@ -22,7 +18,7 @@
     font-family: $font-family-monserrat;
     font-size: 1.7em;
     font-weight: bold;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 1.5em;
     margin-bottom: 33px;
     padding: 0.25em 0;
@@ -57,6 +53,13 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @include respond-to-screen(lg) {
+      flex-wrap: nowrap;
+    }
+    @include respond-to-screen(md) {
+      margin:0 auto;
+      max-width:700px;
+    }
   }
   &-Card {
 
@@ -175,7 +178,7 @@
       }
 
       @include respond-to-screen(md) {
-        margin:7px 0;
+        margin:35px 0;
       }
       @include respond-to-screen(lg) {
         margin: 7px 7px;

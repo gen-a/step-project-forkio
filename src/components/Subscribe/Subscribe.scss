@@ -1,0 +1,108 @@
+.Subscribe {
+
+  padding: 17px 0 20px 0;
+
+  @include respond-to-screen(sm) {
+    padding: 36px 0 35px 0;
+  }
+  @include respond-to-screen(md) {
+    padding: 7px 0 20px 0;
+  }
+  @include respond-to-screen(lg) {
+    padding: 34px 0 36px 0;
+  }
+
+  &-Title {
+    color: #635c73;
+    font-family: $font-family-monserrat;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.45em;
+    margin-bottom: 23px;
+    padding: 0.25em 0;
+    text-align: center;
+
+    @include respond-to-screen(sm) {
+      font-size: 1.75em;
+      line-height: 1.45em;
+      margin-bottom: 33px;
+    }
+    @include respond-to-screen(md) {
+      flex: 1 1 100%;
+      font-size: 2em;
+      line-height: 1.45em;
+      margin-bottom: 0;
+    }
+    @include respond-to-screen(lg) {
+      flex:1 1 27%;
+      font-size: 2em;
+      line-height: 1.45em;
+      margin: 0 0.8%;
+      text-align:left;
+    }
+  }
+  &-Form {
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 0;
+    width:100%;
+
+    &Input {
+      background: white;
+      border: 0;
+      border-radius: 21px;
+      box-sizing: border-box;
+      display: block;
+      height: 42px;
+      outline: none;
+      padding: 5px 23px 0 23px;
+      margin: 14px auto;
+      width: 100%;
+
+      &::placeholder {
+        font-family: $font-family-monserrat;
+        color: #c8cbcf;
+      }
+
+      @include respond-to-screen(sm) {
+        max-width: 300px;
+      }
+
+      @include respond-to-screen(md) {
+        flex: 1 146%;
+        margin:10px 2%;
+      }
+      @include respond-to-screen(lg) {
+        flex: 1 1 27%;
+        margin:10px 0.8%;
+      }
+
+
+    }
+    &Button {
+      display: block;
+      margin: 23px auto;
+      font-size: 0.8em;
+      font-weight: normal;
+      height:42px;
+      padding:0 30px;
+      text-transform: uppercase;
+
+      @include respond-to-screen(sm) {
+        margin: 15px auto;
+      }
+      @include respond-to-screen(md) {
+        margin: 14px auto;
+        flex: 0 0 auto;
+      }
+      @include respond-to-screen(lg) {
+        flex:0 0 11%;
+        margin: 10px 0.8%;
+      }
+    }
+  }
+}

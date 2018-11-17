@@ -1,0 +1,146 @@
+.Footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 27px;
+
+  @include respond-to-screen(sm) {
+    padding: 27px 18px;
+  }
+  @include respond-to-screen(md) {
+    padding: 54px 0;
+  }
+  @include respond-to-screen(lg) {
+    padding: 54px 0;
+  }
+
+  &-About{
+    box-sizing: border-box;
+    margin-bottom: 29px;
+
+    @include respond-to-screen(md) {
+      flex: 0 0 46%;
+      margin:0 2% 82px 2%;
+
+    }
+    @include respond-to-screen(lg) {
+      flex: 0 0 29.93%;
+      margin:0 0.8%;
+
+    }
+  }
+
+  &-Logo {
+
+    display: block;
+    height: 41px;
+    margin-bottom: 19px;
+    overflow: hidden;
+
+    &Img {
+      @include respond-to-screen(xs) {
+        position: relative;
+        left: -56px;
+      }
+    }
+  }
+
+  &-Navigation {
+    box-sizing: border-box;
+    margin-bottom: 28px;
+
+    @include respond-to-screen(md) {
+      flex: 0 0 46%;
+      margin:0 2%;
+
+    }
+
+    @include respond-to-screen(lg) {
+      flex: 0 0 15.69%;
+      margin:0 0.8%;
+
+    }
+
+    &Title {
+      color: #323232;
+      font-size: 1.07em;
+      line-height: 1.25em;
+      margin-bottom: 17px;
+    }
+    &Entries {
+
+    }
+    &Entry {
+      color: #8d81ac;
+      display: block;
+      line-height: 1.44em;
+    }
+  }
+
+  &-Contacts {
+    box-sizing: border-box;
+    margin-bottom: 32px;
+
+    @include respond-to-screen(md) {
+      flex: 0 0 46%;
+      margin:0 2%;
+    }
+    @include respond-to-screen(lg) {
+      flex: 0 0 22.49%;
+      margin:0 0.8%;
+
+    }
+    &Phone {
+      color: #31384d;
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.125em;
+      margin-bottom: 6px;
+
+      &Notice {
+        color: #848e97;
+        font-size: .75em;
+        letter-spacing: -0.6px;
+        line-height: 1.125em;
+        margin-bottom: 33px;
+      }
+    }
+    &City {
+      color: #323232;
+      font-size: 1.125em;
+      letter-spacing: -0.5px;
+      line-height: 1.125em;
+      margin-bottom: 13px;
+    }
+    &Address {
+      line-height: 1.4em;
+    }
+  }
+
+  &-Info {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    @include respond-to-screen(md) {
+      margin:0 2%;
+      flex: 0 0 46%;
+    }
+    @include respond-to-screen(lg) {
+      margin:0 0.8%;
+      flex: 0 0 24.59%;
+    }
+    &Title {
+      color: #323232;
+      font-size: 1.125em;
+      letter-spacing: -0.5px;
+      line-height: 1.125em;
+      margin-bottom: 14px;
+    }
+    &Text {
+      font-size: .925em;
+      line-height: 1.575em;
+    }
+  }
+}
