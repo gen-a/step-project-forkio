@@ -15,7 +15,8 @@ module.exports = function(options){
 			return stream(
 				gulp.src(options.src),
                 $.sass({sourceComments: 'map'}),
-				$.if(isDevelopment, $.sourcemaps.init()),
+                $.if(isDevelopment, $.sourcemaps.write({includeContent: false})),
+				$.if(isDevelopment, $.sourcemaps.init({loadMaps: true})),
 				//$.cached(options.cacheName),
 				$.autoprefixer({ browsers: autoprefixBrowsers }),
 				//$.remember(options.cacheName),
